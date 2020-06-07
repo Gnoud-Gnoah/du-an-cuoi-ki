@@ -2,11 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="885b0844-2c5b-466f-8dc1-3e58a7e898c1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/DuAnCuoiKi.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/backGround.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/startButton2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/my-game/Index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/Scene1.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-game/Scene1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/Scene2.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-game/Scene2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/Scene3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/StartSheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/my-game/assets/StartSheet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/frameWork.png" beforeDir="false" afterPath="$PROJECT_DIR$/my-game/assets/frameWork.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-game/game.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,18 +26,22 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ct8NNwRZyKYSmnaBoxHMXtrvOP" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ThucHanhCNPM/Volume/Scene1.js" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -40,11 +53,35 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591336488508</updated>
-      <workItem from="1591336494303" duration="1141000" />
+      <workItem from="1591336494303" duration="1804000" />
+      <workItem from="1591497124059" duration="2260000" />
     </task>
+    <task id="LOCAL-00001" summary="Khởi tạo cơ bản code và hình ảnh cho khởi đầu game.">
+      <created>1591338442136</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1591338442136</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Khởi tạo cơ bản code và hình ảnh cho khởi đầu game." />
+    <option name="LAST_COMMIT_MESSAGE" value="Khởi tạo cơ bản code và hình ảnh cho khởi đầu game." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="393" y="19" key="CommitChangelistDialog2" timestamp="1591338441035">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="393" y="19" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1591338441035" />
+    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1591497646679">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1591497646679" />
   </component>
 </project>
