@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="885b0844-2c5b-466f-8dc1-3e58a7e898c1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/my-game/assets/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/backGround.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/startButton2.png" afterDir="false" />
+    <list default="true" id="885b0844-2c5b-466f-8dc1-3e58a7e898c1" name="Default Changelist" comment="Khởi tạo cơ bản code và hình ảnh cho khởi đầu game.">
+      <change afterPath="$PROJECT_DIR$/my-game/assets/bridge.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/bridge1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/bridge2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-game/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/my-game/Index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-game/Scene1.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-game/Scene1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-game/Scene2.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-game/Scene2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-game/Scene3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-game/assets/14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-game/assets/15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-game/assets/StartSheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/my-game/assets/StartSheet.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-game/assets/frameWork.png" beforeDir="false" afterPath="$PROJECT_DIR$/my-game/assets/frameWork.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-game/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-game/game.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +47,9 @@
       <option name="presentableId" value="Default" />
       <updated>1591336488508</updated>
       <workItem from="1591336494303" duration="1804000" />
-      <workItem from="1591497124059" duration="2260000" />
+      <workItem from="1591497124059" duration="2635000" />
+      <workItem from="1591601761788" duration="3339000" />
+      <workItem from="1591610919682" duration="3288000" />
     </task>
     <task id="LOCAL-00001" summary="Khởi tạo cơ bản code và hình ảnh cho khởi đầu game.">
       <created>1591338442136</created>
@@ -75,13 +70,21 @@
     <option name="LAST_COMMIT_MESSAGE" value="Khởi tạo cơ bản code và hình ảnh cho khởi đầu game." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="393" y="19" key="CommitChangelistDialog2" timestamp="1591338441035">
+    <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591499568343">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="393" y="19" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1591338441035" />
-    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1591497646679">
+    <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1591499568343" />
+    <state x="393" y="19" key="CommitChangelistDialog2" timestamp="1591499583636">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1591497646679" />
+    <state x="393" y="19" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1591499583636" />
+    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1591603275533">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1591603275533" />
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1591614486603">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1591614486603" />
   </component>
 </project>
