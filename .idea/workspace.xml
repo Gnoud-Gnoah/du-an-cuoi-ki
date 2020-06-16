@@ -2,44 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="885b0844-2c5b-466f-8dc1-3e58a7e898c1" name="Default Changelist" comment="Khởi tạo cơ bản code và hình ảnh cho khởi đầu game.">
-      <change afterPath="$PROJECT_DIR$/my-game/assets/0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/14.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/15.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/17.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/19.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/20.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/21.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/22.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/23.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/25.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/26.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/27.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/28.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/29.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/30.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/carChild.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/carFather.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-game/Scene1.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-game/Scene1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-game/assets/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/my-game/assets/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-game/assets/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/my-game/assets/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-game/assets/bridge.png" beforeDir="false" afterPath="$PROJECT_DIR$/my-game/assets/bridge.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-game/assets/bridge1.png" beforeDir="false" afterPath="$PROJECT_DIR$/my-game/assets/bridge1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-game/assets/bridge2.png" beforeDir="false" afterPath="$PROJECT_DIR$/my-game/assets/bridge2.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +48,11 @@
       <workItem from="1591614784634" duration="77000" />
       <workItem from="1591620224633" duration="7649000" />
       <workItem from="1591671942522" duration="2362000" />
-      <workItem from="1591679315796" duration="1913000" />
+      <workItem from="1591679315796" duration="3135000" />
+      <workItem from="1591948917806" duration="1945000" />
+      <workItem from="1592137476688" duration="1222000" />
+      <workItem from="1592266670986" duration="4847000" />
+      <workItem from="1592315688854" duration="10717000" />
     </task>
     <task id="LOCAL-00001" summary="Khởi tạo cơ bản code và hình ảnh cho khởi đầu game.">
       <created>1591338442136</created>
@@ -113,10 +81,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="393" y="19" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1591499583636" />
-    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1591622499435">
+    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1592137850667">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1591622499435" />
+    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1592137850667" />
     <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1591680282571">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
