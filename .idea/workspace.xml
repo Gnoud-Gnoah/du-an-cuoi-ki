@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="885b0844-2c5b-466f-8dc1-3e58a7e898c1" name="Default Changelist" comment="Khởi tạo cơ bản code và hình ảnh cho khởi đầu game.">
+      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/backGroundSound.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-game/Scene1.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-game/Scene1.js" afterDir="false" />
     </list>
@@ -30,6 +31,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ThucHanhCNPM/Volume/Scene1.js" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -54,7 +56,8 @@
       <workItem from="1592266670986" duration="4847000" />
       <workItem from="1592315688854" duration="11404000" />
       <workItem from="1592379048392" duration="1262000" />
-      <workItem from="1592380599876" duration="2080000" />
+      <workItem from="1592380599876" duration="4673000" />
+      <workItem from="1592398904679" duration="1580000" />
     </task>
     <task id="LOCAL-00001" summary="Khởi tạo cơ bản code và hình ảnh cho khởi đầu game.">
       <created>1591338442136</created>

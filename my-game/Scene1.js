@@ -2,7 +2,7 @@ let arrNumber = []
 let numberPlay = 5
 let zone = []
 let data = []
-let brigi
+let correctSound, incorrectSound, clappingSound, backGroundSound
 
 class Scene1 extends Phaser.Scene{
 
@@ -24,7 +24,6 @@ class Scene1 extends Phaser.Scene{
 
         this.load.image('bridge', 'Assets/bridge.png')
         this.load.image('bridge1', 'Assets/bridge1.png')
-        this.load.image('bridge2', 'Assets/bridge2.png')
 
         this.load.image('0', 'Assets/0.png')
         this.load.image('1', 'Assets/1.png')
@@ -57,12 +56,22 @@ class Scene1 extends Phaser.Scene{
         this.load.image('28', 'Assets/28.png')
         this.load.image('29', 'Assets/29.png')
         this.load.image('30', 'Assets/30.png')
+
+        this.load.audio('backGroundSound','assets/Audio/backGroundSound.mp3')
+        this.load.audio('incorrect','assets/Audio/incorrect.mp3')
+        this.load.audio('correct','assets/Audio/correct.mp3')
+        this.load.audio('clapping','assets/Audio/clapping.mp3')
     }
 
     //create game;
     create(){
         this.backGround = this.add.image(0, 0, 'backGround').setOrigin(0, 0)
         this.frameWork = this.add.image(325, 20, 'frameWork').setOrigin(0, 0)
+
+        correctSound = this.sound.add('correct')
+        incorrectSound = this.sound.add('incorrect')
+        clappingSound = this.sound.add('clapping')
+        backGroundSound = this.sound.add('backGroundSound')
 
         this.scene1()
     }
@@ -97,6 +106,16 @@ class Scene1 extends Phaser.Scene{
     }
 
     scene2(){
+        let musicConfig = {
+            mute: false,
+            volume: 1,
+            rate: 1,
+            detune: 0,
+            seek: 0,
+            loop: true,
+            delay: 0
+        }
+        backGroundSound.play(musicConfig)
         this.randomDataNumber()
     }
 
@@ -261,6 +280,44 @@ class Scene1 extends Phaser.Scene{
 
             numberPlay--
 
+            if(numberPlay === 0){
+
+                let musicConfig = {
+                    mute: false,
+                    volume: 3,
+                    rate: 1,
+                    detune: 0,
+                    seek: 0,
+                    loop: false,
+                    delay: 0
+                }
+                correctSound.play(musicConfig)
+
+                let musicConfigClap = {
+                    mute: false,
+                    volume: 5,
+                    rate: 1,
+                    detune: 0,
+                    seek: 0,
+                    loop: false,
+                    delay: 5
+                }
+                clappingSound.play(musicConfigClap)
+
+            }
+            else{
+                let musicConfig = {
+                    mute: false,
+                    volume: 3,
+                    rate: 1,
+                    detune: 0,
+                    seek: 0,
+                    loop: false,
+                    delay: 0
+                }
+                correctSound.play(musicConfig)
+            }
+
             gameObject.input.enabled = false;
 
         });
@@ -271,6 +328,18 @@ class Scene1 extends Phaser.Scene{
             {
                 gameObject.x = gameObject.input.dragStartX;
                 gameObject.y = gameObject.input.dragStartY;
+
+                let musicConfig = {
+                    mute: false,
+                    volume: 3,
+                    rate: 1,
+                    detune: 0,
+                    seek: 0,
+                    loop: false,
+                    delay: 0
+                }
+
+                incorrectSound.play(musicConfig)
             }
 
         });
@@ -381,6 +450,33 @@ class Scene1 extends Phaser.Scene{
         return this.data
     }
 
+    //Update;
+    update(){
+
+        if(numberPlay === 0) {
+
+            this.time.delayedCall(2000, function Correct() {
+
+                this.destroyObject()
+
+                this.time.delayedCall(2000, function Correct() {
+
+                    this.createBridge()
+                    this.children.bringToTop(this.carChild);
+
+                    this.time.delayedCall(2000, function Correct() {
+
+                        this.animationCar()
+
+                    }, [], this);
+
+                }, [], this);
+
+            }, [], this);
+        }
+
+    }
+
     animationCar(){
         this.children.bringToTop(this.carChild)
         if(this.carChild.x < 1000) {
@@ -400,34 +496,6 @@ class Scene1 extends Phaser.Scene{
                 zone[i] = this.setLocalZones(i, "bridge")
             }
         }
-    }
-
-    //Update;
-    update(){
-        
-        this.children.bringToTop(this.carChild);
-        
-        if(numberPlay === 0) {
-
-            this.time.delayedCall(2000, function Correct() {
-
-                this.destroyObject()
-
-                this.time.delayedCall(2000, function Correct() {
-
-                    this.createBridge()
-
-                    this.time.delayedCall(2000, function Correct() {
-
-                        this.animationCar()
-
-                    }, [], this);
-
-                }, [], this);
-
-            }, [], this);
-        }
-
     }
 
 }
