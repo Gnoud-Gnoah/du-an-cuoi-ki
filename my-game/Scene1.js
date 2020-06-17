@@ -1,8 +1,8 @@
 let arrNumber = []
-let label
 let numberPlay = 5
 let zone = []
 let data = []
+let brigi
 
 class Scene1 extends Phaser.Scene{
 
@@ -63,10 +63,14 @@ class Scene1 extends Phaser.Scene{
     create(){
         this.backGround = this.add.image(0, 0, 'backGround').setOrigin(0, 0)
         this.frameWork = this.add.image(325, 20, 'frameWork').setOrigin(0, 0)
-        label = this.add.text(0, 0, '', { font: "48px Arial Black", fill: "#c51b7d" });
-
 
         this.scene1()
+    }
+
+    scene1(){
+        this.carChild = this.add.image(370, 450, 'carChild').setOrigin(0, 0)
+        this.carFather = this.add.image(1020, 350, 'carFather').setOrigin(0, 0)
+        this.startButton()
     }
 
     startButton(){
@@ -92,10 +96,8 @@ class Scene1 extends Phaser.Scene{
 
     }
 
-    scene1(){
-        this.carChild = this.add.image(370, 450, 'carChild').setOrigin(0, 0)
-        this.carFather = this.add.image(1020, 350, 'carFather').setOrigin(0, 0)
-        this.startButton()
+    scene2(){
+        this.randomDataNumber()
     }
 
     randomDataNumber(){
@@ -159,8 +161,7 @@ class Scene1 extends Phaser.Scene{
                 data[i] = this.setLocalDataNumberConst(data4, i)
             }
             else{
-
-                zone[i] = this.setLocalZones(i).setInteractive()
+                zone[i] = this.setLocalZones(i, "bridge1").setInteractive()
 
                 data[i] = this.setLocalDataNumberDynamic(arrNumber[i], pos++, i)
             }
@@ -183,39 +184,30 @@ class Scene1 extends Phaser.Scene{
 
             if(gameObject.name === 0){
                 zone[0].input.dropZone = true;
-                //console.log("0 mo")
             }
             else if(gameObject.name === 1){
                 zone[1].input.dropZone = true;
-                //console.log("1 mo")
             }
             else if(gameObject.name === 2){
                 zone[2].input.dropZone = true;
-                //console.log("2 mo")
             }
             else if(gameObject.name === 3){
                 zone[3].input.dropZone = true;
-                //console.log("3 mo")
             }
             else if(gameObject.name === 4){
                 zone[4].input.dropZone = true;
-                //console.log("4 mo")
             }
             else if(gameObject.name === 5){
                 zone[5].input.dropZone = true;
-                //console.log("5 mo")
             }
             else if(gameObject.name === 6){
                 zone[6].input.dropZone = true;
-                //console.log("6 mo")
             }
             else if(gameObject.name === 7){
                 zone[7].input.dropZone = true;
-                //console.log("7 mo")
             }
             else {
                 zone[8].input.dropZone = true;
-                //console.log("8 mo")
             }
 
         });
@@ -224,39 +216,30 @@ class Scene1 extends Phaser.Scene{
 
             if(gameObject.name === 0){
                 zone[0].input.dropZone = false;
-                //console.log("0 dong")
             }
             else if(gameObject.name === 1){
                 zone[1].input.dropZone = false;
-                //console.log("1 dong")
             }
             else if(gameObject.name === 2){
                 zone[2].input.dropZone = false;
-                //console.log("2 dong")
             }
             else if(gameObject.name === 3){
                 zone[3].input.dropZone = false;
-                //console.log("3 dong")
             }
             else if(gameObject.name === 4){
                 zone[4].input.dropZone = false;
-                //console.log("4 dong")
             }
             else if(gameObject.name === 5){
                 zone[5].input.dropZone = false;
-                //console.log("5 dong")
             }
             else if(gameObject.name === 6){
                 zone[6].input.dropZone = false
-                //console.log("6 dong")
             }
             else if(gameObject.name === 7){
                 zone[7].input.dropZone = false
-                //console.log("7 dong")
             }
             else {
                 zone[8].input.dropZone = false
-                //console.log("8 dong")
             }
 
         });
@@ -294,34 +277,34 @@ class Scene1 extends Phaser.Scene{
 
     }
 
-    setLocalZones(local){
+    setLocalZones(local, image){
 
         if(local == 0){
-            this.bridge1 = this.add.image(480, 430, 'bridge1').setOrigin(0, 0)
+            this.bridge1 = this.add.image(480, 430, image).setOrigin(0, 0)
         }
         else if(local == 1){
-            this.bridge1 = this.add.image(540, 430, 'bridge1').setOrigin(0, 0)
+            this.bridge1 = this.add.image(540, 430, image).setOrigin(0, 0)
         }
         else if(local == 2){
-            this.bridge1 = this.add.image(600, 430, 'bridge1').setOrigin(0, 0)
+            this.bridge1 = this.add.image(600, 430, image).setOrigin(0, 0)
         }
         else if(local == 3){
-            this.bridge1 = this.add.image(660, 430, 'bridge1').setOrigin(0, 0)
+            this.bridge1 = this.add.image(660, 430, image).setOrigin(0, 0)
         }
         else if(local == 4){
-            this.bridge1 = this.add.image(720, 430, 'bridge1').setOrigin(0, 0)
+            this.bridge1 = this.add.image(720, 430, image).setOrigin(0, 0)
         }
         else if(local == 5){
-            this.bridge1 = this.add.image(780, 430, 'bridge1').setOrigin(0, 0)
+            this.bridge1 = this.add.image(780, 430, image).setOrigin(0, 0)
         }
         else if(local == 6){
-            this.bridge1 = this.add.image(840, 430, 'bridge1').setOrigin(0, 0)
+            this.bridge1 = this.add.image(840, 430, image).setOrigin(0, 0)
         }
         else if(local == 7){
-            this.bridge1 = this.add.image(900, 430, 'bridge1').setOrigin(0, 0)
+            this.bridge1 = this.add.image(900, 430, image).setOrigin(0, 0)
         }
         else{
-            this.bridge1 = this.add.image(960, 430, 'bridge1').setOrigin(0, 0)
+            this.bridge1 = this.add.image(960, 430, image).setOrigin(0, 0)
         }
 
         return this.bridge1
@@ -398,10 +381,6 @@ class Scene1 extends Phaser.Scene{
         return this.data
     }
 
-    scene2(){
-        this.randomDataNumber()
-    }
-
     animationCar(){
         this.children.bringToTop(this.carChild)
         if(this.carChild.x < 1000) {
@@ -415,9 +394,19 @@ class Scene1 extends Phaser.Scene{
         }
     }
 
+    createBridge(){
+        for(var i = 0; i < 9; i++){
+            if(zone[i] !== null){
+                zone[i] = this.setLocalZones(i, "bridge")
+            }
+        }
+    }
+
     //Update;
     update(){
-
+        
+        this.children.bringToTop(this.carChild);
+        
         if(numberPlay === 0) {
 
             this.time.delayedCall(2000, function Correct() {
@@ -426,7 +415,13 @@ class Scene1 extends Phaser.Scene{
 
                 this.time.delayedCall(2000, function Correct() {
 
-                    this.animationCar()
+                    this.createBridge()
+
+                    this.time.delayedCall(2000, function Correct() {
+
+                        this.animationCar()
+
+                    }, [], this);
 
                 }, [], this);
 
