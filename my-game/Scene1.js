@@ -2,7 +2,7 @@ let arrNumber = []
 let numberPlay = 5
 let zone = []
 let data = []
-let correctSound, incorrectSound, clappingSound, backGroundSound
+let correctSound, incorrectSound, clappingSound, backGroundSound, question
 let onlyOneObject = 0, restart = 0
 
 class Scene1 extends Phaser.Scene{
@@ -27,6 +27,7 @@ class Scene1 extends Phaser.Scene{
 
         this.load.image('bridge', 'Assets/bridge.png')
         this.load.image('bridge1', 'Assets/bridge1.png')
+        this.load.image('cloudMove', 'Assets/cloudMove.png')
 
         this.load.image('0', 'Assets/0.png')
         this.load.image('1', 'Assets/1.png')
@@ -64,6 +65,7 @@ class Scene1 extends Phaser.Scene{
         this.load.audio('incorrect','assets/Audio/incorrect.mp3')
         this.load.audio('correct','assets/Audio/correct.mp3')
         this.load.audio('clapping','assets/Audio/clapping.mp3')
+        this.load.audio('question','assets/Audio/question.mp3')
     }
 
     //create game;
@@ -75,6 +77,7 @@ class Scene1 extends Phaser.Scene{
         incorrectSound = this.sound.add('incorrect')
         clappingSound = this.sound.add('clapping')
         backGroundSound = this.sound.add('backGroundSound')
+        question = this.sound.add('question')
 
         this.scene1()
     }
@@ -123,6 +126,16 @@ class Scene1 extends Phaser.Scene{
             loop: true,
             delay: 0
         }
+        let musicConfigQuestion = {
+            mute: false,
+            volume: 3,
+            rate: 1,
+            detune: 0,
+            seek: 0,
+            loop: false,
+            delay: 1
+        }
+        question.play(musicConfigQuestion)
         backGroundSound.play(musicConfig)
         this.randomDataNumber()
     }

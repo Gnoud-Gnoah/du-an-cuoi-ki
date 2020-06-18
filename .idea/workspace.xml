@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="885b0844-2c5b-466f-8dc1-3e58a7e898c1" name="Default Changelist" comment="Khởi tạo cơ bản code và hình ảnh cho khởi đầu game.">
-      <change afterPath="$PROJECT_DIR$/my-game/assets/restartButton.png" afterDir="false" />
+    <list default="true" id="885b0844-2c5b-466f-8dc1-3e58a7e898c1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/question.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/cloudMove.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-game/Scene1.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-game/Scene1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/frameWork.png" beforeDir="false" afterPath="$PROJECT_DIR$/my-game/assets/frameWork.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +60,7 @@
       <workItem from="1592379048392" duration="1262000" />
       <workItem from="1592380599876" duration="4673000" />
       <workItem from="1592398904679" duration="1580000" />
-      <workItem from="1592442115868" duration="5332000" />
+      <workItem from="1592442115868" duration="6468000" />
     </task>
     <task id="LOCAL-00001" summary="Khởi tạo cơ bản code và hình ảnh cho khởi đầu game.">
       <created>1591338442136</created>
@@ -67,7 +69,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591338442136</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Hoàn thành hiển thị chúc mừng khi hoàn thành bài và nút quay lại nếu muốn chơi lại.">
+      <created>1592448218104</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1592448218104</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -76,17 +85,18 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Khởi tạo cơ bản code và hình ảnh cho khởi đầu game." />
-    <option name="LAST_COMMIT_MESSAGE" value="Khởi tạo cơ bản code và hình ảnh cho khởi đầu game." />
+    <MESSAGE value="Hoàn thành hiển thị chúc mừng khi hoàn thành bài và nút quay lại nếu muốn chơi lại." />
+    <option name="LAST_COMMIT_MESSAGE" value="Hoàn thành hiển thị chúc mừng khi hoàn thành bài và nút quay lại nếu muốn chơi lại." />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591499568343">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1591499568343" />
-    <state x="393" y="19" key="CommitChangelistDialog2" timestamp="1591499583636">
+    <state x="393" y="19" key="CommitChangelistDialog2" timestamp="1592448216135">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="393" y="19" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1591499583636" />
+    <state x="393" y="19" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1592448216135" />
     <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1592137850667">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
