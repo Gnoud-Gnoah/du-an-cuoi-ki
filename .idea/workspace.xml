@@ -2,8 +2,83 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="885b0844-2c5b-466f-8dc1-3e58a7e898c1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/my-game/assets/DataNumber/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/DataNumber/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/DataNumber/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/DataNumber/11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/DataNumber/12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/DataNumber/13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/DataNumber/14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/DataNumber/15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/DataNumber/16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/DataNumber/17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/DataNumber/18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/DataNumber/19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/DataNumber/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/DataNumber/20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/DataNumber/21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/DataNumber/22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/DataNumber/23.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/DataNumber/24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/DataNumber/25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/DataNumber/26.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/DataNumber/27.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/DataNumber/28.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/DataNumber/29.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/DataNumber/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/DataNumber/30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/DataNumber/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/DataNumber/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/DataNumber/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/DataNumber/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/DataNumber/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/DataNumber/9.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-game/Scene1.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-game/Scene1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/26.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/27.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/28.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/29.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/StartSheet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/backGround.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/bridge.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/bridge1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/carChild.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/carFather.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/cloudMove.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/endGame.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/frameWork.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/restartButton.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/speaker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/startButton1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/startButton2.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +132,9 @@
       <workItem from="1592379048392" duration="1262000" />
       <workItem from="1592380599876" duration="4673000" />
       <workItem from="1592398904679" duration="1580000" />
-      <workItem from="1592442115868" duration="7842000" />
+      <workItem from="1592442115868" duration="8347000" />
+      <workItem from="1592488861660" duration="1307000" />
+      <workItem from="1592490917153" duration="311000" />
     </task>
     <task id="LOCAL-00001" summary="Khởi tạo cơ bản code và hình ảnh cho khởi đầu game.">
       <created>1591338442136</created>
