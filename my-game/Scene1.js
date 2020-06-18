@@ -3,6 +3,7 @@ let numberPlay = 5
 let zone = []
 let data = []
 let correctSound, incorrectSound, clappingSound, backGroundSound
+let onlyOneObject = 0, restart = 0
 
 class Scene1 extends Phaser.Scene{
 
@@ -14,6 +15,7 @@ class Scene1 extends Phaser.Scene{
     preload() {
         this.load.image('backGround', 'Assets/backGround.png')
         this.load.image('frameWork', 'Assets/frameWork.png')
+        this.load.image('endGame', 'Assets/endGame.png')
 
         this.load.image('carChild', 'Assets/carChild.png')
         this.load.image('carFather', 'Assets/carFather.png')
@@ -21,6 +23,7 @@ class Scene1 extends Phaser.Scene{
         this.load.image('StartSheet', 'Assets/StartSheet.png')
         this.load.image('startButton1', 'Assets/startButton1.png')
         this.load.image('startButton2', 'Assets/startButton2.png')
+        this.load.image('restartButton', 'Assets/restartButton.png')
 
         this.load.image('bridge', 'Assets/bridge.png')
         this.load.image('bridge1', 'Assets/bridge1.png')
@@ -79,7 +82,12 @@ class Scene1 extends Phaser.Scene{
     scene1(){
         this.carChild = this.add.image(370, 450, 'carChild').setOrigin(0, 0)
         this.carFather = this.add.image(1020, 350, 'carFather').setOrigin(0, 0)
-        this.startButton()
+        if(restart === 0){
+            this.startButton()
+        }
+        else{
+            this.scene2()
+        }
     }
 
     startButton(){
@@ -454,25 +462,34 @@ class Scene1 extends Phaser.Scene{
     update(){
 
         if(numberPlay === 0) {
-
+            numberPlay = -1
             this.time.delayedCall(2000, function Correct() {
 
                 this.destroyObject()
 
-                this.time.delayedCall(2000, function Correct() {
+            }, [], this);
+        }
 
-                    this.createBridge()
-                    this.children.bringToTop(this.carChild);
+        if(numberPlay === - 1){
+            numberPlay = -2
+            this.time.delayedCall(4000, function Correct() {
 
-                    this.time.delayedCall(2000, function Correct() {
-
-                        this.animationCar()
-
-                    }, [], this);
-
-                }, [], this);
+                this.createBridge()
+                this.children.bringToTop(this.carChild);
 
             }, [], this);
+        }
+
+        if(numberPlay === -2){
+            this.time.delayedCall(6000, function Correct() {
+
+                this.animationCar()
+
+            }, [], this);
+        }
+
+        if(numberPlay === -3 && onlyOneObject === 0){
+            this.scene3()
         }
 
     }
@@ -480,22 +497,38 @@ class Scene1 extends Phaser.Scene{
     animationCar(){
         this.children.bringToTop(this.carChild)
         if(this.carChild.x < 1000) {
-            this.carChild.x += 1.5
+            this.carChild.x += 3
+        }
+        else{
+            numberPlay = -3
         }
     }
 
     destroyObject(){
-        for(var i = 0; i < 9; i++){
+        for(let i = 0; i < 9; i++){
             data[i].destroy()
         }
     }
 
     createBridge(){
-        for(var i = 0; i < 9; i++){
+        for(let i = 0; i < 9; i++){
             if(zone[i] !== null){
-                zone[i] = this.setLocalZones(i, "bridge")
+                zone[i] = this.setLocalZones(i, "bridge").setInteractive()
             }
         }
+    }
+
+    scene3(){
+        onlyOneObject++
+        restart++
+        this.endGame = this.add.image(525, 150, 'endGame').setOrigin(0, 0)
+        this.restartButotn = this.add.image(704, 340, 'restartButton').setOrigin(0, 0)
+        backGroundSound.stop()
+        this.restartButotn.setInteractive().on('pointerdown', () => {
+            numberPlay = 5
+            onlyOneObject = 0
+            this.scene.start('Scene1');
+        })
     }
 
 }
