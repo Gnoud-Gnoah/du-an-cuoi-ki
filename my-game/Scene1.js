@@ -4,6 +4,7 @@ let zone = []
 let data = []
 let correctSound, incorrectSound, clappingSound, backGroundSound, question
 let onlyOneObject = 0, restart = 0
+let direct = 1
 
 class Scene1 extends Phaser.Scene{
 
@@ -72,6 +73,7 @@ class Scene1 extends Phaser.Scene{
     create(){
         this.backGround = this.add.image(0, 0, 'backGround').setOrigin(0, 0)
         this.frameWork = this.add.image(325, 20, 'frameWork').setOrigin(0, 0)
+        this.cloud = this.add.image(330, 40, 'cloudMove').setOrigin(0, 0)
 
         correctSound = this.sound.add('correct')
         incorrectSound = this.sound.add('incorrect')
@@ -474,6 +476,8 @@ class Scene1 extends Phaser.Scene{
     //Update;
     update(){
 
+        this.moveOnCloud()
+
         if(numberPlay === 0) {
             numberPlay = -1
             this.time.delayedCall(2000, function Correct() {
@@ -507,10 +511,21 @@ class Scene1 extends Phaser.Scene{
 
     }
 
+    moveOnCloud(){
+        if(this.cloud.x === 525){
+            direct = -1
+        }
+        if(this.cloud.x === 330){
+            direct = 1
+        }
+
+        this.cloud.x += direct*1
+    }
+
     animationCar(){
         this.children.bringToTop(this.carChild)
         if(this.carChild.x < 1000) {
-            this.carChild.x += 3
+            this.carChild.x += 1.5
         }
         else{
             numberPlay = -3
@@ -537,6 +552,7 @@ class Scene1 extends Phaser.Scene{
         this.endGame = this.add.image(525, 150, 'endGame').setOrigin(0, 0)
         this.restartButotn = this.add.image(704, 340, 'restartButton').setOrigin(0, 0)
         backGroundSound.stop()
+        clappingSound.stop()
         this.restartButotn.setInteractive().on('pointerdown', () => {
             numberPlay = 5
             onlyOneObject = 0

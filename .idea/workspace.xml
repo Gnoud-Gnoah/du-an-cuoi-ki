@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="885b0844-2c5b-466f-8dc1-3e58a7e898c1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/question.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/cloudMove.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-game/Scene1.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-game/Scene1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-game/assets/frameWork.png" beforeDir="false" afterPath="$PROJECT_DIR$/my-game/assets/frameWork.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +57,7 @@
       <workItem from="1592379048392" duration="1262000" />
       <workItem from="1592380599876" duration="4673000" />
       <workItem from="1592398904679" duration="1580000" />
-      <workItem from="1592442115868" duration="6468000" />
+      <workItem from="1592442115868" duration="7842000" />
     </task>
     <task id="LOCAL-00001" summary="Khởi tạo cơ bản code và hình ảnh cho khởi đầu game.">
       <created>1591338442136</created>
