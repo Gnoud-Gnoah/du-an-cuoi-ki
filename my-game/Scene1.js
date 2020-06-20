@@ -1,5 +1,6 @@
 let arrNumber = []
-let numberPlay = 5
+let numberPlay = 7
+let dataConstNumber = 9 - numberPlay
 let zone = []
 let data = []
 let correctSound, incorrectSound, clappingSound, backGroundSound, question
@@ -14,59 +15,7 @@ class Scene1 extends Phaser.Scene{
 
     //load image and audio;
     preload() {
-        this.load.image('backGround', 'assets/Images/backGround.png')
-        this.load.image('frameWork', 'assets/Images/frameWork.png')
-        this.load.image('endGame', 'assets/Images/endGame.png')
-
-        this.load.image('carChild', 'assets/Images/carChild.png')
-        this.load.image('carFather', 'assets/Images/carFather.png')
-
-        this.load.image('StartSheet', 'assets/Images/StartSheet.png')
-        this.load.image('startButton1', 'assets/Images/startButton1.png')
-        this.load.image('startButton2', 'assets/Images/startButton2.png')
-        this.load.image('restartButton', 'assets/Images/restartButton.png')
-
-        this.load.image('bridge', 'assets/Images/bridge.png')
-        this.load.image('bridge1', 'assets/Images/bridge1.png')
-        this.load.image('cloudMove', 'assets/Images/cloudMove.png')
-
-        this.load.image('0', 'assets/DataNumber/0.png')
-        this.load.image('1', 'assets/DataNumber/1.png')
-        this.load.image('2', 'assets/DataNumber/2.png')
-        this.load.image('3', 'assets/DataNumber/3.png')
-        this.load.image('4', 'assets/DataNumber/4.png')
-        this.load.image('5', 'assets/DataNumber/5.png')
-        this.load.image('6', 'assets/DataNumber/6.png')
-        this.load.image('7', 'assets/DataNumber/7.png')
-        this.load.image('8', 'assets/DataNumber/8.png')
-        this.load.image('9', 'assets/DataNumber/9.png')
-        this.load.image('10', 'assets/DataNumber/10.png')
-        this.load.image('11', 'assets/DataNumber/11.png')
-        this.load.image('12', 'assets/DataNumber/12.png')
-        this.load.image('13', 'assets/DataNumber/13.png')
-        this.load.image('14', 'assets/DataNumber/14.png')
-        this.load.image('15', 'assets/DataNumber/15.png')
-        this.load.image('16', 'assets/DataNumber/16.png')
-        this.load.image('17', 'assets/DataNumber/17.png')
-        this.load.image('18', 'assets/DataNumber/18.png')
-        this.load.image('19', 'assets/DataNumber/19.png')
-        this.load.image('20', 'assets/DataNumber/20.png')
-        this.load.image('21', 'assets/DataNumber/21.png')
-        this.load.image('22', 'assets/DataNumber/22.png')
-        this.load.image('23', 'assets/DataNumber/23.png')
-        this.load.image('24', 'assets/DataNumber/24.png')
-        this.load.image('25', 'assets/DataNumber/25.png')
-        this.load.image('26', 'assets/DataNumber/26.png')
-        this.load.image('27', 'assets/DataNumber/27.png')
-        this.load.image('28', 'assets/DataNumber/28.png')
-        this.load.image('29', 'assets/DataNumber/29.png')
-        this.load.image('30', 'assets/DataNumber/30.png')
-
-        this.load.audio('backGroundSound','assets/Audio/backGroundSound.mp3')
-        this.load.audio('incorrect','assets/Audio/incorrect.mp3')
-        this.load.audio('correct','assets/Audio/correct.mp3')
-        this.load.audio('clapping','assets/Audio/clapping.mp3')
-        this.load.audio('question','assets/Audio/question.mp3')
+        this.load.pack('dataGame', 'assets/Data/dataGame.json');
     }
 
     //create game;
@@ -166,48 +115,62 @@ class Scene1 extends Phaser.Scene{
             }
         }
 
-        let data1 = arrNumber[Math.floor(Math.random() * arrNumber.length)]
+        let dataConstArr = []
+        while(dataConstArr.length < dataConstNumber){
+            let data = arrNumber[Math.floor(Math.random() * arrNumber.length)]
 
-        let data2
-        while(1) {
-            data2 = arrNumber[Math.floor(Math.random() * arrNumber.length)]
-            if(data2 !== data1) break
-        }
-
-        let data3
-        while(1) {
-            data3 = arrNumber[Math.floor(Math.random() * arrNumber.length)]
-            if(data3 !== data1 && data3 !== data2) break
-        }
-
-        let data4
-        while(1) {
-            data4 = arrNumber[Math.floor(Math.random() * arrNumber.length)]
-            if(data4 !== data1 && data4 !== data2 && data4 !== data3) break
-        }
-
-        let pos = 0
-
-        for(let i = 0; i < 9; i++){
-
-            if(i === arrNumber.indexOf(data1)){
-                data[i] = this.setLocalDataNumberConst(data1, i)
-            }
-            else if(i === arrNumber.indexOf(data2)){
-                data[i] = this.setLocalDataNumberConst(data2, i)
-            }
-            else if(i === arrNumber.indexOf(data3)){
-                data[i] = this.setLocalDataNumberConst(data3, i)
-            }
-            else if(i === arrNumber.indexOf(data4)){
-                data[i] = this.setLocalDataNumberConst(data4, i)
+            if(dataConstArr.length === 0){
+                dataConstArr.push(data)
             }
             else{
-                zone[i] = this.setLocalZones(i, "bridge1").setInteractive()
-
-                data[i] = this.setLocalDataNumberDynamic(arrNumber[i], pos++, i)
+                if(dataConstArr.indexOf(data) === -1){
+                    dataConstArr.push(data)
+                }
             }
         }
+
+        let pos = []
+        let positive = 0
+        for(let i = 0; i < numberPlay; i++){
+            while(1){
+                let temp = Phaser.Math.Between(0, (numberPlay - 1))
+                if(pos.length === 0){
+                    pos.push(temp)
+                }
+                if(pos.indexOf(temp) === -1){
+                    pos.push(temp)
+                    break
+                }
+            }
+        }
+
+        for(let i = 0; i < numberPlay; i++){
+            console.log(pos[i])
+        }
+
+        if(dataConstNumber === 0){
+            for(let i = 0; i < 9; i++){
+                zone[i] = this.setLocalZones(i, "bridge1").setInteractive()
+                data[i] = this.setLocalDataNumberDynamic(arrNumber[i], pos[positive++], i)
+            }
+        }
+        else{
+            for(let i = 0; i < 9; i++) {
+                for (let j = 0; j < dataConstNumber; j++) {
+                    if (i === arrNumber.indexOf(dataConstArr[j])) {
+                        data[i] = this.setLocalDataNumberConst(dataConstArr[j], i)
+                        break
+                    }
+                    else{
+                        if(j === dataConstNumber - 1){
+                            zone[i] = this.setLocalZones(i, "bridge1").setInteractive()
+                            data[i] = this.setLocalDataNumberDynamic(arrNumber[i], pos[positive++], i)
+                        }
+                    }
+                }
+            }
+        }
+
 
         this.input.on('dragstart', function (pointer, gameObject) {
 
@@ -283,16 +246,6 @@ class Scene1 extends Phaser.Scene{
             else {
                 zone[8].input.dropZone = false
             }
-
-        });
-
-        this.input.on('dragenter', function (pointer, gameObject, dropZone) {
-
-
-        });
-
-        this.input.on('dragleave', function (pointer, gameObject, dropZone) {
-
 
         });
 
@@ -451,19 +404,31 @@ class Scene1 extends Phaser.Scene{
 
         switch (local) {
             case 0:
-                this.data = this.add.image(655, 555, dataNumber).setName(checkOrder)
+                this.data = this.add.image(355, 555, dataNumber).setName(checkOrder)
                 break
             case 1:
-                this.data = this.add.image(855, 555, dataNumber).setName(checkOrder)
+                this.data = this.add.image(455, 555, dataNumber).setName(checkOrder)
                 break
             case 2:
                 this.data = this.add.image(555, 555, dataNumber).setName(checkOrder)
                 break
             case 3:
-                this.data = this.add.image(955, 555, dataNumber).setName(checkOrder)
+                this.data = this.add.image(655, 555, dataNumber).setName(checkOrder)
                 break
             case 4:
                 this.data = this.add.image(755, 555, dataNumber).setName(checkOrder)
+                break
+            case 5:
+                this.data = this.add.image(855, 555, dataNumber).setName(checkOrder)
+                break
+            case 6:
+                this.data = this.add.image(955, 555, dataNumber).setName(checkOrder)
+                break
+            case 7:
+                this.data = this.add.image(1055, 555, dataNumber).setName(checkOrder)
+                break
+            case 8:
+                this.data = this.add.image(1155, 555, dataNumber).setName(checkOrder)
                 break
         }
 
@@ -533,7 +498,7 @@ class Scene1 extends Phaser.Scene{
     }
 
     destroyObject(){
-        for(let i = 0; i < 9; i++){
+        for(let i = 0; i < 9; i++) {
             data[i].destroy()
         }
     }

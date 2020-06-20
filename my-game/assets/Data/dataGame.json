@@ -1,0 +1,258 @@
+{
+  "test1": {
+    "files": [
+
+      {
+        "type": "image",
+        "key": "0",
+        "url": "assets/DataNumber/0.png"
+      },
+      {
+        "type": "image",
+        "key": "1",
+        "url": "assets/DataNumber/1.png"
+      },
+      {
+        "type": "image",
+        "key": "2",
+        "url": "assets/DataNumber/2.png"
+      },
+      {
+        "type": "image",
+        "key": "3",
+        "url": "assets/DataNumber/3.png"
+      },
+      {
+        "type": "image",
+        "key": "4",
+        "url": "assets/DataNumber/4.png"
+      },
+      {
+        "type": "image",
+        "key": "5",
+        "url": "assets/DataNumber/5.png"
+      },
+      {
+        "type": "image",
+        "key": "6",
+        "url": "assets/DataNumber/6.png"
+      },
+      {
+        "type": "image",
+        "key": "7",
+        "url": "assets/DataNumber/7.png"
+      },
+      {
+        "type": "image",
+        "key": "8",
+        "url": "assets/DataNumber/8.png"
+      },
+      {
+        "type": "image",
+        "key": "9",
+        "url": "assets/DataNumber/9.png"
+      },
+      {
+        "type": "image",
+        "key": "10",
+        "url": "assets/DataNumber/10.png"
+      },
+      {
+        "type": "image",
+        "key": "11",
+        "url": "assets/DataNumber/11.png"
+      },
+      {
+        "type": "image",
+        "key": "12",
+        "url": "assets/DataNumber/12.png"
+      },
+      {
+        "type": "image",
+        "key": "13",
+        "url": "assets/DataNumber/13.png"
+      },
+      {
+        "type": "image",
+        "key": "14",
+        "url": "assets/DataNumber/14.png"
+      },
+      {
+        "type": "image",
+        "key": "15",
+        "url": "assets/DataNumber/15.png"
+      },
+      {
+        "type": "image",
+        "key": "16",
+        "url": "assets/DataNumber/16.png"
+      },
+      {
+        "type": "image",
+        "key": "17",
+        "url": "assets/DataNumber/17.png"
+      },
+      {
+        "type": "image",
+        "key": "18",
+        "url": "assets/DataNumber/18.png"
+      },
+      {
+        "type": "image",
+        "key": "19",
+        "url": "assets/DataNumber/19.png"
+      },
+      {
+        "type": "image",
+        "key": "20",
+        "url": "assets/DataNumber/20.png"
+      },
+      {
+        "type": "image",
+        "key": "21",
+        "url": "assets/DataNumber/21.png"
+      },
+      {
+        "type": "image",
+        "key": "22",
+        "url": "assets/DataNumber/22.png"
+      },
+      {
+        "type": "image",
+        "key": "23",
+        "url": "assets/DataNumber/23.png"
+      },
+      {
+        "type": "image",
+        "key": "24",
+        "url": "assets/DataNumber/24.png"
+      },
+      {
+        "type": "image",
+        "key": "25",
+        "url": "assets/DataNumber/25.png"
+      },
+      {
+        "type": "image",
+        "key": "26",
+        "url": "assets/DataNumber/26.png"
+      },
+      {
+        "type": "image",
+        "key": "27",
+        "url": "assets/DataNumber/27.png"
+      },
+      {
+        "type": "image",
+        "key": "28",
+        "url": "assets/DataNumber/28.png"
+      },
+      {
+        "type": "image",
+        "key": "29",
+        "url": "assets/DataNumber/29.png"
+      },
+      {
+        "type": "image",
+        "key": "30",
+        "url": "assets/DataNumber/30.png"
+      },
+
+      {
+        "type": "image",
+        "key": "backGround",
+        "url": "assets/Images/backGround.png"
+      },
+      {
+        "type": "image",
+        "key": "frameWork",
+        "url": "assets/Images/frameWork.png"
+      },
+      {
+        "type": "image",
+        "key": "endGame",
+        "url": "assets/Images/endGame.png"
+      },
+      {
+        "type": "image",
+        "key": "carChild",
+        "url": "assets/Images/carChild.png"
+      },
+      {
+        "type": "image",
+        "key": "carFather",
+        "url": "assets/Images/carFather.png"
+      },
+      {
+        "type": "image",
+        "key": "StartSheet",
+        "url": "assets/Images/StartSheet.png"
+      },
+      {
+        "type": "image",
+        "key": "startButton2",
+        "url": "assets/Images/startButton2.png"
+      },
+      {
+        "type": "image",
+        "key": "startButton1",
+        "url": "assets/Images/startButton1.png"
+      },
+      {
+        "type": "image",
+        "key": "restartButton",
+        "url": "assets/Images/restartButton.png"
+      },
+      {
+        "type": "image",
+        "key": "bridge",
+        "url": "assets/Images/bridge.png"
+      },
+      {
+        "type": "image",
+        "key": "bridge1",
+        "url": "assets/Images/bridge1.png"
+      },
+      {
+        "type": "image",
+        "key": "cloudMove",
+        "url": "assets/Images/cloudMove.png"
+      },
+
+      {
+        "type": "audio",
+        "key": "backGroundSound",
+        "url": "assets/Audio/backGroundSound.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "incorrect",
+        "url": "assets/Audio/incorrect.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "correct",
+        "url": "assets/Audio/correct.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "question",
+        "url": "assets/Audio/question.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "clapping",
+        "url": "assets/Audio/clapping.mp3"
+      }
+
+    ]
+  },
+
+  "meta": {
+    "generated": "1401380327373",
+    "app": "Phaser 3 Asset Packer",
+    "url": "https://phaser.io",
+    "version": "1.0",
+    "copyright": "Photon Storm Ltd. 2018"
+  }
+}

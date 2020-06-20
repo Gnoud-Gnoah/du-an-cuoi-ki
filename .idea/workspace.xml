@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="885b0844-2c5b-466f-8dc1-3e58a7e898c1" name="Default Changelist" comment="">
+    <list default="true" id="885b0844-2c5b-466f-8dc1-3e58a7e898c1" name="Default Changelist" comment="Sửa lỗi tải ảnh #6">
+      <change afterPath="$PROJECT_DIR$/my-game/assets/Data/dataGame.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-game/Scene1.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-game/Scene1.js" afterDir="false" />
     </list>
@@ -59,7 +60,9 @@
       <workItem from="1592398904679" duration="1580000" />
       <workItem from="1592442115868" duration="8347000" />
       <workItem from="1592488861660" duration="1307000" />
-      <workItem from="1592490917153" duration="799000" />
+      <workItem from="1592490917153" duration="1133000" />
+      <workItem from="1592664309421" duration="4896000" />
+      <workItem from="1592674560771" duration="9507000" />
     </task>
     <task id="LOCAL-00001" summary="Khởi tạo cơ bản code và hình ảnh cho khởi đầu game.">
       <created>1591338442136</created>
@@ -75,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592448218104</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Sửa lỗi tải ảnh #6">
+      <created>1592491849370</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1592491849370</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -85,17 +95,18 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Khởi tạo cơ bản code và hình ảnh cho khởi đầu game." />
     <MESSAGE value="Hoàn thành hiển thị chúc mừng khi hoàn thành bài và nút quay lại nếu muốn chơi lại." />
-    <option name="LAST_COMMIT_MESSAGE" value="Hoàn thành hiển thị chúc mừng khi hoàn thành bài và nút quay lại nếu muốn chơi lại." />
+    <MESSAGE value="Sửa lỗi tải ảnh #6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sửa lỗi tải ảnh #6" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591499568343">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1591499568343" />
-    <state x="393" y="19" key="CommitChangelistDialog2" timestamp="1592491616468">
+    <state x="393" y="19" key="CommitChangelistDialog2" timestamp="1592667484684">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="393" y="19" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1592491616468" />
+    <state x="393" y="19" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1592667484684" />
     <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1592137850667">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
