@@ -1,5 +1,5 @@
 let arrNumber = []
-let numberPlay = 7
+let numberPlay = 5
 let dataConstNumber = 9 - numberPlay
 let zone = []
 let data = []
@@ -133,19 +133,17 @@ class Scene1 extends Phaser.Scene{
         let positive = 0
         for(let i = 0; i < numberPlay; i++){
             while(1){
-                let temp = Phaser.Math.Between(0, (numberPlay - 1))
+
+                let temp = Phaser.Math.Between(0, numberPlay - 1)
                 if(pos.length === 0){
                     pos.push(temp)
+                    break
                 }
                 if(pos.indexOf(temp) === -1){
                     pos.push(temp)
                     break
                 }
             }
-        }
-
-        for(let i = 0; i < numberPlay; i++){
-            console.log(pos[i])
         }
 
         if(dataConstNumber === 0){
@@ -519,7 +517,7 @@ class Scene1 extends Phaser.Scene{
         backGroundSound.stop()
         clappingSound.stop()
         this.restartButotn.setInteractive().on('pointerdown', () => {
-            numberPlay = 5
+            numberPlay = 9 - dataConstNumber
             onlyOneObject = 0
             this.scene.start('Scene1');
         })

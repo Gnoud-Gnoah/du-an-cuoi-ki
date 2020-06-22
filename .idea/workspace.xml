@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="885b0844-2c5b-466f-8dc1-3e58a7e898c1" name="Default Changelist" comment="Sửa lỗi tải ảnh #6">
-      <change afterPath="$PROJECT_DIR$/my-game/assets/Data/dataGame.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-game/Scene1.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-game/Scene1.js" afterDir="false" />
     </list>
@@ -62,7 +61,9 @@
       <workItem from="1592488861660" duration="1307000" />
       <workItem from="1592490917153" duration="1133000" />
       <workItem from="1592664309421" duration="4896000" />
-      <workItem from="1592674560771" duration="9507000" />
+      <workItem from="1592674560771" duration="9777000" />
+      <workItem from="1592700894762" duration="1351000" />
+      <workItem from="1592741021908" duration="652000" />
     </task>
     <task id="LOCAL-00001" summary="Khởi tạo cơ bản code và hình ảnh cho khởi đầu game.">
       <created>1591338442136</created>
