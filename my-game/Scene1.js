@@ -1,5 +1,5 @@
 let arrNumber = []
-let numberPlay = 5
+let numberPlay = 6
 let dataConstNumber = 9 - numberPlay
 let zone = []
 let data = []
@@ -22,7 +22,7 @@ class Scene1 extends Phaser.Scene{
     create(){
         this.backGround = this.add.image(0, 0, 'backGround').setOrigin(0, 0)
         this.frameWork = this.add.image(325, 20, 'frameWork').setOrigin(0, 0)
-        this.cloud = this.add.image(330, 40, 'cloudMove').setOrigin(0, 0)
+        this.cloud = this.add.image(330, 20, 'cloudMove').setOrigin(0, 0)
 
         correctSound = this.sound.add('correct')
         incorrectSound = this.sound.add('incorrect')
@@ -34,8 +34,8 @@ class Scene1 extends Phaser.Scene{
     }
 
     scene1(){
-        this.carChild = this.add.image(370, 450, 'carChild').setOrigin(0, 0)
-        this.carFather = this.add.image(1020, 350, 'carFather').setOrigin(0, 0)
+        this.carChild = this.add.image(370, 420, 'carChild').setOrigin(0, 0)
+        this.carFather = this.add.image(1020, 320, 'carFather').setOrigin(0, 0)
         if(restart === 0){
             this.startButton()
         }
@@ -174,6 +174,8 @@ class Scene1 extends Phaser.Scene{
 
             this.children.bringToTop(gameObject);
 
+            gameObject.setScale(1.5);
+
         }, this);
 
         this.input.on('drag', function (pointer, gameObject, dragX, dragY) {
@@ -183,125 +185,61 @@ class Scene1 extends Phaser.Scene{
 
         });
 
-        this.input.on('gameobjectdown', function (pointer, gameObject) {
-
-            if(gameObject.name === 0){
-                zone[0].input.dropZone = true;
-            }
-            else if(gameObject.name === 1){
-                zone[1].input.dropZone = true;
-            }
-            else if(gameObject.name === 2){
-                zone[2].input.dropZone = true;
-            }
-            else if(gameObject.name === 3){
-                zone[3].input.dropZone = true;
-            }
-            else if(gameObject.name === 4){
-                zone[4].input.dropZone = true;
-            }
-            else if(gameObject.name === 5){
-                zone[5].input.dropZone = true;
-            }
-            else if(gameObject.name === 6){
-                zone[6].input.dropZone = true;
-            }
-            else if(gameObject.name === 7){
-                zone[7].input.dropZone = true;
-            }
-            else {
-                zone[8].input.dropZone = true;
-            }
-
-        });
-
-        this.input.on('gameobjectup', function (pointer, gameObject) {
-
-            if(gameObject.name === 0){
-                zone[0].input.dropZone = false;
-            }
-            else if(gameObject.name === 1){
-                zone[1].input.dropZone = false;
-            }
-            else if(gameObject.name === 2){
-                zone[2].input.dropZone = false;
-            }
-            else if(gameObject.name === 3){
-                zone[3].input.dropZone = false;
-            }
-            else if(gameObject.name === 4){
-                zone[4].input.dropZone = false;
-            }
-            else if(gameObject.name === 5){
-                zone[5].input.dropZone = false;
-            }
-            else if(gameObject.name === 6){
-                zone[6].input.dropZone = false
-            }
-            else if(gameObject.name === 7){
-                zone[7].input.dropZone = false
-            }
-            else {
-                zone[8].input.dropZone = false
-            }
-
-        });
-
         this.input.on('drop', function (pointer, gameObject, dropZone) {
 
             gameObject.x = dropZone.x + 5
             gameObject.y = dropZone.y + 30
 
-            numberPlay--
+            if(gameObject.name === dropZone.name){
+                numberPlay--
 
-            if(numberPlay === 0){
+                if(numberPlay === 0){
 
-                let musicConfig = {
-                    mute: false,
-                    volume: 3,
-                    rate: 1,
-                    detune: 0,
-                    seek: 0,
-                    loop: false,
-                    delay: 0
+                    let musicConfig = {
+                        mute: false,
+                        volume: 3,
+                        rate: 1,
+                        detune: 0,
+                        seek: 0,
+                        loop: false,
+                        delay: 0
+                    }
+                    correctSound.play(musicConfig)
+
+                    let musicConfigClap = {
+                        mute: false,
+                        volume: 5,
+                        rate: 1,
+                        detune: 0,
+                        seek: 0,
+                        loop: false,
+                        delay: 5
+                    }
+                    clappingSound.play(musicConfigClap)
+
                 }
-                correctSound.play(musicConfig)
-
-                let musicConfigClap = {
-                    mute: false,
-                    volume: 5,
-                    rate: 1,
-                    detune: 0,
-                    seek: 0,
-                    loop: false,
-                    delay: 5
+                else{
+                    let musicConfig = {
+                        mute: false,
+                        volume: 3,
+                        rate: 1,
+                        detune: 0,
+                        seek: 0,
+                        loop: false,
+                        delay: 0
+                    }
+                    correctSound.play(musicConfig)
                 }
-                clappingSound.play(musicConfigClap)
 
+                gameObject.setScale(1);
+                gameObject.input.enabled = false;
             }
             else{
-                let musicConfig = {
-                    mute: false,
-                    volume: 3,
-                    rate: 1,
-                    detune: 0,
-                    seek: 0,
-                    loop: false,
-                    delay: 0
-                }
-                correctSound.play(musicConfig)
-            }
-
-            gameObject.input.enabled = false;
-
-        });
-
-        this.input.on('dragend', function (pointer, gameObject, dropped) {
-
-            if (!dropped)
-            {
                 gameObject.x = gameObject.input.dragStartX;
                 gameObject.y = gameObject.input.dragStartY;
+
+                gameObject.setScale(1)
+
 
                 let musicConfig = {
                     mute: false,
@@ -316,6 +254,20 @@ class Scene1 extends Phaser.Scene{
                 incorrectSound.play(musicConfig)
             }
 
+
+        });
+
+        this.input.on('dragend', function (pointer, gameObject, dropped) {
+
+            if (!dropped)
+            {
+                gameObject.x = gameObject.input.dragStartX;
+                gameObject.y = gameObject.input.dragStartY;
+
+                gameObject.setScale(1)
+
+            }
+
         });
 
     }
@@ -323,32 +275,35 @@ class Scene1 extends Phaser.Scene{
     setLocalZones(local, image){
 
         if(local == 0){
-            this.bridge1 = this.add.image(480, 430, image).setOrigin(0, 0)
+            this.bridge1 = this.add.image(480, 400, image).setName(local).setOrigin(0, 0)
         }
         else if(local == 1){
-            this.bridge1 = this.add.image(540, 430, image).setOrigin(0, 0)
+            this.bridge1 = this.add.image(540, 400, image).setName(local).setOrigin(0, 0)
         }
         else if(local == 2){
-            this.bridge1 = this.add.image(600, 430, image).setOrigin(0, 0)
+            this.bridge1 = this.add.image(600, 400, image).setName(local).setOrigin(0, 0)
         }
         else if(local == 3){
-            this.bridge1 = this.add.image(660, 430, image).setOrigin(0, 0)
+            this.bridge1 = this.add.image(660, 400, image).setName(local).setOrigin(0, 0)
         }
         else if(local == 4){
-            this.bridge1 = this.add.image(720, 430, image).setOrigin(0, 0)
+            this.bridge1 = this.add.image(720, 400, image).setName(local).setOrigin(0, 0)
         }
         else if(local == 5){
-            this.bridge1 = this.add.image(780, 430, image).setOrigin(0, 0)
+            this.bridge1 = this.add.image(780, 400, image).setName(local).setOrigin(0, 0)
         }
         else if(local == 6){
-            this.bridge1 = this.add.image(840, 430, image).setOrigin(0, 0)
+            this.bridge1 = this.add.image(840, 400, image).setName(local).setOrigin(0, 0)
         }
         else if(local == 7){
-            this.bridge1 = this.add.image(900, 430, image).setOrigin(0, 0)
+            this.bridge1 = this.add.image(900, 400, image).setName(local).setOrigin(0, 0)
         }
         else{
-            this.bridge1 = this.add.image(960, 430, image).setOrigin(0, 0)
+            this.bridge1 = this.add.image(960, 400, image).setName(local).setOrigin(0, 0)
         }
+
+        this.bridge1.setInteractive()
+        this.bridge1.input.dropZone = true
 
         return this.bridge1
 
@@ -358,40 +313,40 @@ class Scene1 extends Phaser.Scene{
 
         switch (local) {
             case 0:
-                this.bridge = this.add.image(480, 430, 'bridge').setOrigin(0, 0)
-                this.data = this.add.image(485, 460, dataNumber).setOrigin(0, 0)
+                this.bridge = this.add.image(480, 400, 'bridge').setOrigin(0, 0)
+                this.data = this.add.image(485, 430, dataNumber).setOrigin(0, 0)
                 break
             case 1:
-                this.bridge = this.add.image(540, 430, 'bridge').setOrigin(0, 0)
-                this.data = this.add.image(545, 460, dataNumber).setOrigin(0, 0)
+                this.bridge = this.add.image(540, 400, 'bridge').setOrigin(0, 0)
+                this.data = this.add.image(545, 430, dataNumber).setOrigin(0, 0)
                 break
             case 2:
-                this.bridge = this.add.image(600, 430, 'bridge').setOrigin(0, 0)
-                this.data = this.add.image(605, 460, dataNumber).setOrigin(0, 0)
+                this.bridge = this.add.image(600, 400, 'bridge').setOrigin(0, 0)
+                this.data = this.add.image(605, 430, dataNumber).setOrigin(0, 0)
                 break
             case 3:
-                this.bridge = this.add.image(660, 430, 'bridge').setOrigin(0, 0)
-                this.data = this.add.image(665, 460, dataNumber).setOrigin(0, 0)
+                this.bridge = this.add.image(660, 400, 'bridge').setOrigin(0, 0)
+                this.data = this.add.image(665, 430, dataNumber).setOrigin(0, 0)
                 break
             case 4:
-                this.bridge = this.add.image(720, 430, 'bridge').setOrigin(0, 0)
-                this.data = this.add.image(725, 460, dataNumber).setOrigin(0, 0)
+                this.bridge = this.add.image(720, 400, 'bridge').setOrigin(0, 0)
+                this.data = this.add.image(725, 430, dataNumber).setOrigin(0, 0)
                 break
             case 5:
-                this.bridge = this.add.image(780, 430, 'bridge').setOrigin(0, 0)
-                this.data = this.add.image(785, 460, dataNumber).setOrigin(0, 0)
+                this.bridge = this.add.image(780, 400, 'bridge').setOrigin(0, 0)
+                this.data = this.add.image(785, 430, dataNumber).setOrigin(0, 0)
                 break
             case 6:
-                this.bridge = this.add.image(840, 430, 'bridge').setOrigin(0, 0)
-                this.data = this.add.image(845, 460, dataNumber).setOrigin(0, 0)
+                this.bridge = this.add.image(840, 400, 'bridge').setOrigin(0, 0)
+                this.data = this.add.image(845, 430, dataNumber).setOrigin(0, 0)
                 break
             case 7:
-                this.bridge = this.add.image(900, 430, 'bridge').setOrigin(0, 0)
-                this.data = this.add.image(905, 460, dataNumber).setOrigin(0, 0)
+                this.bridge = this.add.image(900, 400, 'bridge').setOrigin(0, 0)
+                this.data = this.add.image(905, 430, dataNumber).setOrigin(0, 0)
                 break
             case 8:
-                this.bridge = this.add.image(960, 430, 'bridge').setOrigin(0, 0)
-                this.data = this.add.image(965, 460, dataNumber).setOrigin(0, 0)
+                this.bridge = this.add.image(960, 400, 'bridge').setOrigin(0, 0)
+                this.data = this.add.image(965, 430, dataNumber).setOrigin(0, 0)
                 break
         }
 
@@ -402,31 +357,31 @@ class Scene1 extends Phaser.Scene{
 
         switch (local) {
             case 0:
-                this.data = this.add.image(355, 555, dataNumber).setName(checkOrder)
+                this.data = this.add.image(555, 515, dataNumber).setName(checkOrder)
                 break
             case 1:
-                this.data = this.add.image(455, 555, dataNumber).setName(checkOrder)
+                this.data = this.add.image(655, 515, dataNumber).setName(checkOrder)
                 break
             case 2:
-                this.data = this.add.image(555, 555, dataNumber).setName(checkOrder)
+                this.data = this.add.image(755, 515, dataNumber).setName(checkOrder)
                 break
             case 3:
-                this.data = this.add.image(655, 555, dataNumber).setName(checkOrder)
+                this.data = this.add.image(855, 515, dataNumber).setName(checkOrder)
                 break
             case 4:
-                this.data = this.add.image(755, 555, dataNumber).setName(checkOrder)
+                this.data = this.add.image(955, 515, dataNumber).setName(checkOrder)
                 break
             case 5:
-                this.data = this.add.image(855, 555, dataNumber).setName(checkOrder)
+                this.data = this.add.image(455, 515, dataNumber).setName(checkOrder)
                 break
             case 6:
-                this.data = this.add.image(955, 555, dataNumber).setName(checkOrder)
+                this.data = this.add.image(1055, 515, dataNumber).setName(checkOrder)
                 break
             case 7:
-                this.data = this.add.image(1055, 555, dataNumber).setName(checkOrder)
+                this.data = this.add.image(355, 515, dataNumber).setName(checkOrder)
                 break
             case 8:
-                this.data = this.add.image(1155, 555, dataNumber).setName(checkOrder)
+                this.data = this.add.image(1155, 515, dataNumber).setName(checkOrder)
                 break
         }
 
