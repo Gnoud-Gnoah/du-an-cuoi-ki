@@ -4,6 +4,7 @@ let dataConstNumber = 9 - numberPlay
 let zone = []
 let data = []
 let correctSound, incorrectSound, clappingSound, backGroundSound, question
+let sound = []
 let onlyOneObject = 0, restart = 0
 let direct = 1
 
@@ -16,6 +17,8 @@ class Scene1 extends Phaser.Scene{
     //load image and audio;
     preload() {
         this.load.pack('dataGame', 'assets/Data/dataGame.json');
+        this.load.animation('animCorrect', 'assets/Data/animFireWork.json');
+        //this.load.atlas('correct', 'assets/Animations/correct.png', 'assets/Data/fireWork.json');
     }
 
     //create game;
@@ -29,6 +32,10 @@ class Scene1 extends Phaser.Scene{
         clappingSound = this.sound.add('clapping')
         backGroundSound = this.sound.add('backGroundSound')
         question = this.sound.add('question')
+
+        for(let i = 0; i < 31; i++){
+            sound[i] = this.sound.add(i)
+        }
 
         this.scene1()
     }
@@ -93,6 +100,7 @@ class Scene1 extends Phaser.Scene{
 
     randomDataNumber(){
 
+        // random lay 9 so khac nhau tu 0-30
         while(arrNumber.length != 9){
             let temp = Phaser.Math.Between(0, 30);
             if(arrNumber.length == 0){
@@ -105,6 +113,7 @@ class Scene1 extends Phaser.Scene{
             }
         }
 
+        // sap xep mang 9 du lieu vua random
         for(let i = 0; i < 8; i++){
             for(let j = i + 1; j < 9; j++){
                 if(arrNumber[j] < arrNumber [i]){
@@ -115,6 +124,7 @@ class Scene1 extends Phaser.Scene{
             }
         }
 
+        // random trong mang 9 phan tu lay 1 so luong dataConstNumber lam so co dinh cho truoc
         let dataConstArr = []
         while(dataConstArr.length < dataConstNumber){
             let data = arrNumber[Math.floor(Math.random() * arrNumber.length)]
@@ -129,6 +139,7 @@ class Scene1 extends Phaser.Scene{
             }
         }
 
+        // random cac vi tri cua du lieu can sap xep (sao tron du lieu de nguoi choi sap xep lai)
         let pos = []
         let positive = 0
         for(let i = 0; i < numberPlay; i++){
@@ -146,6 +157,7 @@ class Scene1 extends Phaser.Scene{
             }
         }
 
+        //xuat cac du lieu tinh va dong ra man hinh
         if(dataConstNumber === 0){
             for(let i = 0; i < 9; i++){
                 zone[i] = this.setLocalZones(i, "bridge1").setInteractive()
@@ -254,6 +266,18 @@ class Scene1 extends Phaser.Scene{
                 incorrectSound.play(musicConfig)
             }
 
+
+            let musicConfig = {
+                mute: false,
+                volume: 3,
+                rate: 1,
+                detune: 0,
+                seek: 0,
+                loop: false,
+                delay: 1
+            }
+
+            sound[arrNumber[gameObject.name]].play(musicConfig)
 
         });
 

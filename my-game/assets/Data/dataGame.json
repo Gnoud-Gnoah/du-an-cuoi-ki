@@ -243,6 +243,160 @@
         "type": "audio",
         "key": "clapping",
         "url": "assets/Audio/clapping.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "0",
+        "url": "assets/Audio/0.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "1",
+        "url": "assets/Audio/1.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "2",
+        "url": "assets/Audio/2.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "3",
+        "url": "assets/Audio/3.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "4",
+        "url": "assets/Audio/4.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "5",
+        "url": "assets/Audio/5.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "6",
+        "url": "assets/Audio/6.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "7",
+        "url": "assets/Audio/7.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "8",
+        "url": "assets/Audio/8.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "9",
+        "url": "assets/Audio/9.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "10",
+        "url": "assets/Audio/10.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "11",
+        "url": "assets/Audio/11.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "12",
+        "url": "assets/Audio/12.mp3"
+      },{
+        "type": "audio",
+        "key": "13",
+        "url": "assets/Audio/13.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "14",
+        "url": "assets/Audio/14.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "15",
+        "url": "assets/Audio/15.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "16",
+        "url": "assets/Audio/16.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "17",
+        "url": "assets/Audio/17.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "18",
+        "url": "assets/Audio/18.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "19",
+        "url": "assets/Audio/19.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "20",
+        "url": "assets/Audio/20.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "21",
+        "url": "assets/Audio/21.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "22",
+        "url": "assets/Audio/22.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "23",
+        "url": "assets/Audio/23.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "24",
+        "url": "assets/Audio/24.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "25",
+        "url": "assets/Audio/25.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "26",
+        "url": "assets/Audio/26.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "27",
+        "url": "assets/Audio/27.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "28",
+        "url": "assets/Audio/28.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "29",
+        "url": "assets/Audio/29.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "30",
+        "url": "assets/Audio/30.mp3"
       }
 
     ]

@@ -2,10 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="885b0844-2c5b-466f-8dc1-3e58a7e898c1" name="Default Changelist" comment="Sửa lỗi tải ảnh #6">
-      <change afterPath="$PROJECT_DIR$/my-game/assets/Animations/correct.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/0.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/1.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/10.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/11.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/12.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/13.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/14.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/15.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/16.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/17.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/18.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/19.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/2.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/20.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/21.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/22.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/23.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/24.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/25.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/26.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/27.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/28.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/29.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/3.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/30.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/4.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/5.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/6.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/7.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/8.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/9.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/Data/animFireWork.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-game/assets/Data/fireWork.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-game/Scene1.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-game/Scene1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-game/assets/Images/cloudMove.png" beforeDir="false" afterPath="$PROJECT_DIR$/my-game/assets/Images/cloudMove.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/Data/dataGame.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-game/assets/Data/dataGame.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +65,11 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ThucHanhCNPM/Volume/Scene1.js" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Desktop\DuAnCuoiKi\my-game\assets\Data" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -69,7 +106,10 @@
       <workItem from="1592841535847" duration="380000" />
       <workItem from="1592986102881" duration="1657000" />
       <workItem from="1593076477181" duration="1584000" />
-      <workItem from="1593093322173" duration="3113000" />
+      <workItem from="1593093322173" duration="3760000" />
+      <workItem from="1593136688497" duration="2470000" />
+      <workItem from="1593160044387" duration="1014000" />
+      <workItem from="1593353651951" duration="3812000" />
     </task>
     <task id="LOCAL-00001" summary="Khởi tạo cơ bản code và hình ảnh cho khởi đầu game.">
       <created>1591338442136</created>
@@ -106,6 +146,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Sửa lỗi tải ảnh #6" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="524" y="234" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593354376729">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="524" y="234" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1593354376729" />
     <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591499568343">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -118,9 +162,13 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1592137850667" />
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1591680282571">
+    <state x="93" y="93" width="1350" height="678" key="dock-window-1" timestamp="1593355231262">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1591680282571" />
+    <state x="93" y="93" width="1350" height="678" key="dock-window-1/0.0.1536.864@0.0.1536.864" timestamp="1593355231262" />
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1593354490333">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1593354490333" />
   </component>
 </project>

@@ -1,0 +1,56 @@
+{
+  "anims": [
+    {
+      "key": "correct",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "correct",
+          "frame": "correct_0000",
+          "duration": 0,
+          "visible": false
+        },
+        {
+          "key": "correct",
+          "frame": "correct_0001",
+          "duration": 0,
+          "visible": false
+        },
+        {
+          "key": "correct",
+          "frame": "correct_0002",
+          "duration": 0,
+          "visible": false
+        },
+        {
+          "key": "correct",
+          "frame": "correct_0003",
+          "duration": 0,
+          "visible": false
+        },
+        {
+          "key": "correct",
+          "frame": "correct_0004",
+          "duration": 0,
+          "visible": false
+        },
+        {
+          "key": "correct",
+          "frame": "correct_0005",
+          "duration": 0,
+          "visible": false
+        }
+      ],
+      "frameRate": 24,
+      "duration": 1.5,
+      "skipMissedFrames": true,
+      "delay": 0,
+      "repeat": -1,
+      "repeatDelay": 0,
+      "yoyo": false,
+      "showOnStart": false,
+      "hideOnComplete": false
+    }
+  ],
+  "globalTimeScale": 1
+}
