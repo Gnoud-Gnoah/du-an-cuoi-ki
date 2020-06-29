@@ -1,13 +1,22 @@
+let dataChooseNumber = 9
+let dataDynamicNumber = 5
+let dataConstNumber = dataChooseNumber - dataDynamicNumber
+
 let arrNumber = []
-let numberPlay = 6
-let dataConstNumber = 9 - numberPlay
 let zone = []
 let data = []
-let correctSound, incorrectSound, clappingSound, backGroundSound, question
 let sound = []
+
+let correctSound, incorrectSound, clappingSound, backGroundSound, question
+
 let onlyOneObject = 0, restart = 0
 let direct = 1
 let muteCheck = false
+
+let localStartOfDataX = 480
+let localStartOfDataY = 400
+let midX = 755
+let midY = 515
 
 class Scene1 extends Phaser.Scene{
 
@@ -17,6 +26,7 @@ class Scene1 extends Phaser.Scene{
 
     //load image and audio;
     preload() {
+        // loading game;
         let progress = this.add.graphics();
         let text1 = this.add.text(520, 380, "LOADING GAME!",  {font: '50px Arial', fill: 'white'})
 
@@ -34,33 +44,37 @@ class Scene1 extends Phaser.Scene{
 
         })
 
+        // load file json data images and audios
         this.load.pack('dataGame', 'assets/Data/dataGame.json');
         this.load.animation('animCorrect', 'assets/Data/animFireWork.json');
+
+
         //this.load.atlas('correct', 'assets/Animations/correct.png', 'assets/Data/fireWork.json');
     }
 
     //create game;
     create(){
+        // add image for first scene
         this.backGround = this.add.image(0, 0, 'backGround').setOrigin(0, 0)
         this.frameWork = this.add.image(325, 20, 'frameWork').setOrigin(0, 0)
         this.cloud = this.add.image(330, 20, 'cloudMove').setOrigin(0, 0)
 
+        // add audio for game
         correctSound = this.sound.add('correct')
         incorrectSound = this.sound.add('incorrect')
         clappingSound = this.sound.add('clapping')
         backGroundSound = this.sound.add('backGroundSound')
         question = this.sound.add('question')
-
         for(let i = 0; i < 31; i++){
             sound[i] = this.sound.add(i)
         }
 
+        // control sound backgroud in game
         this.muteSoundController()
 
+        // goi hoat canh 1
         this.scene1()
     }
-
-
 
     scene1(){
         this.carChild = this.add.image(370, 420, 'carChild').setOrigin(0, 0)
@@ -122,8 +136,9 @@ class Scene1 extends Phaser.Scene{
 
     randomDataNumber(){
 
-        // random lay 9 so khac nhau tu 0-30
-        while(arrNumber.length != 9){
+        // random lay dataChooseNumber (== 9) so khac nhau tu 0-30
+        // dua het vao 1 mang arrNumber
+        while(arrNumber.length != dataChooseNumber){
             let temp = Phaser.Math.Between(0, 30);
             if(arrNumber.length == 0){
                 arrNumber.push(temp)
@@ -135,7 +150,7 @@ class Scene1 extends Phaser.Scene{
             }
         }
 
-        // sap xep mang 9 du lieu vua random
+        // sap xep mang arrNumber tu be den lon
         for(let i = 0; i < 8; i++){
             for(let j = i + 1; j < 9; j++){
                 if(arrNumber[j] < arrNumber [i]){
@@ -146,7 +161,8 @@ class Scene1 extends Phaser.Scene{
             }
         }
 
-        // random trong mang 9 phan tu lay 1 so luong dataConstNumber lam so co dinh cho truoc
+        // random trong mang arrNumber tu lay 1 so luong dataConstNumber = dataChooseNumber - dataDynamicNumber (9 - 6)
+        // dua tat cac so do vao mang dataConstArr lam cac so co dinh cho game.
         let dataConstArr = []
         while(dataConstArr.length < dataConstNumber){
             let data = arrNumber[Math.floor(Math.random() * arrNumber.length)]
@@ -164,10 +180,10 @@ class Scene1 extends Phaser.Scene{
         // random cac vi tri cua du lieu can sap xep (sao tron du lieu de nguoi choi sap xep lai)
         let pos = []
         let positive = 0
-        for(let i = 0; i < numberPlay; i++){
+        for(let i = 0; i < dataDynamicNumber; i++){
             while(1){
 
-                let temp = Phaser.Math.Between(0, numberPlay - 1)
+                let temp = Phaser.Math.Between(0, dataDynamicNumber - 1)
                 if(pos.length === 0){
                     pos.push(temp)
                     break
@@ -182,7 +198,7 @@ class Scene1 extends Phaser.Scene{
         //xuat cac du lieu tinh va dong ra man hinh
         if(dataConstNumber === 0){
             for(let i = 0; i < 9; i++){
-                zone[i] = this.setLocalZones(i, "bridge1").setInteractive()
+                zone[i] = this.setLocalZones(localStartOfDataX, localStartOfDataY, i, "bridge1").setInteractive()
                 data[i] = this.setLocalDataNumberDynamic(arrNumber[i], pos[positive++], i)
             }
         }
@@ -190,13 +206,13 @@ class Scene1 extends Phaser.Scene{
             for(let i = 0; i < 9; i++) {
                 for (let j = 0; j < dataConstNumber; j++) {
                     if (i === arrNumber.indexOf(dataConstArr[j])) {
-                        data[i] = this.setLocalDataNumberConst(dataConstArr[j], i)
+                        data[i] = this.setLocalDataNumberConst(localStartOfDataX, localStartOfDataY, dataConstArr[j], i)
                         break
                     }
                     else{
                         if(j === dataConstNumber - 1){
-                            zone[i] = this.setLocalZones(i, "bridge1").setInteractive()
-                            data[i] = this.setLocalDataNumberDynamic(arrNumber[i], pos[positive++], i)
+                            zone[i] = this.setLocalZones(localStartOfDataX, localStartOfDataY, i, "bridge1").setInteractive()
+                            data[i] = this.setLocalDataNumberDynamic(midX, midY, arrNumber[i], pos[positive++], i)
                         }
                     }
                 }
@@ -225,9 +241,9 @@ class Scene1 extends Phaser.Scene{
             gameObject.y = dropZone.y + 30
 
             if(gameObject.name === dropZone.name){
-                numberPlay--
+                dataDynamicNumber--
 
-                if(numberPlay === 0){
+                if(dataDynamicNumber === 0){
 
                     let musicConfig = {
                         mute: false,
@@ -318,36 +334,10 @@ class Scene1 extends Phaser.Scene{
 
     }
 
-    setLocalZones(local, image){
+    // (480, 400) x += 60
+    setLocalZones(x, y, local, image){
 
-        if(local == 0){
-            this.bridge1 = this.add.image(480, 400, image).setName(local).setOrigin(0, 0)
-        }
-        else if(local == 1){
-            this.bridge1 = this.add.image(540, 400, image).setName(local).setOrigin(0, 0)
-        }
-        else if(local == 2){
-            this.bridge1 = this.add.image(600, 400, image).setName(local).setOrigin(0, 0)
-        }
-        else if(local == 3){
-            this.bridge1 = this.add.image(660, 400, image).setName(local).setOrigin(0, 0)
-        }
-        else if(local == 4){
-            this.bridge1 = this.add.image(720, 400, image).setName(local).setOrigin(0, 0)
-        }
-        else if(local == 5){
-            this.bridge1 = this.add.image(780, 400, image).setName(local).setOrigin(0, 0)
-        }
-        else if(local == 6){
-            this.bridge1 = this.add.image(840, 400, image).setName(local).setOrigin(0, 0)
-        }
-        else if(local == 7){
-            this.bridge1 = this.add.image(900, 400, image).setName(local).setOrigin(0, 0)
-        }
-        else{
-            this.bridge1 = this.add.image(960, 400, image).setName(local).setOrigin(0, 0)
-        }
-
+        this.bridge1 = this.add.image(x + local*60, y, image).setName(local).setOrigin(0, 0)
         this.bridge1.setInteractive()
         this.bridge1.input.dropZone = true
 
@@ -355,81 +345,25 @@ class Scene1 extends Phaser.Scene{
 
     }
 
-    setLocalDataNumberConst(dataNumber, local){
+    // (480, 400) x += 60; (x += 5, y + 30)
+    setLocalDataNumberConst(x, y, dataNumber, local){
 
-        switch (local) {
-            case 0:
-                this.bridge = this.add.image(480, 400, 'bridge').setOrigin(0, 0)
-                this.data = this.add.image(485, 430, dataNumber).setOrigin(0, 0)
-                break
-            case 1:
-                this.bridge = this.add.image(540, 400, 'bridge').setOrigin(0, 0)
-                this.data = this.add.image(545, 430, dataNumber).setOrigin(0, 0)
-                break
-            case 2:
-                this.bridge = this.add.image(600, 400, 'bridge').setOrigin(0, 0)
-                this.data = this.add.image(605, 430, dataNumber).setOrigin(0, 0)
-                break
-            case 3:
-                this.bridge = this.add.image(660, 400, 'bridge').setOrigin(0, 0)
-                this.data = this.add.image(665, 430, dataNumber).setOrigin(0, 0)
-                break
-            case 4:
-                this.bridge = this.add.image(720, 400, 'bridge').setOrigin(0, 0)
-                this.data = this.add.image(725, 430, dataNumber).setOrigin(0, 0)
-                break
-            case 5:
-                this.bridge = this.add.image(780, 400, 'bridge').setOrigin(0, 0)
-                this.data = this.add.image(785, 430, dataNumber).setOrigin(0, 0)
-                break
-            case 6:
-                this.bridge = this.add.image(840, 400, 'bridge').setOrigin(0, 0)
-                this.data = this.add.image(845, 430, dataNumber).setOrigin(0, 0)
-                break
-            case 7:
-                this.bridge = this.add.image(900, 400, 'bridge').setOrigin(0, 0)
-                this.data = this.add.image(905, 430, dataNumber).setOrigin(0, 0)
-                break
-            case 8:
-                this.bridge = this.add.image(960, 400, 'bridge').setOrigin(0, 0)
-                this.data = this.add.image(965, 430, dataNumber).setOrigin(0, 0)
-                break
-        }
+        this.bridge = this.add.image(x + 60*local, y, 'bridge').setOrigin(0, 0)
+        this.data = this.add.image(this.bridge.x + 5, y + 30, dataNumber).setOrigin(0, 0)
 
         return this.data
     }
 
-    setLocalDataNumberDynamic(dataNumber, local, checkOrder){
+    // mid (755, 515)
+    setLocalDataNumberDynamic(x, y, dataNumber, local, checkOrder){
 
-        switch (local) {
-            case 0:
-                this.data = this.add.image(555, 515, dataNumber).setName(checkOrder)
-                break
-            case 1:
-                this.data = this.add.image(655, 515, dataNumber).setName(checkOrder)
-                break
-            case 2:
-                this.data = this.add.image(755, 515, dataNumber).setName(checkOrder)
-                break
-            case 3:
-                this.data = this.add.image(855, 515, dataNumber).setName(checkOrder)
-                break
-            case 4:
-                this.data = this.add.image(955, 515, dataNumber).setName(checkOrder)
-                break
-            case 5:
-                this.data = this.add.image(455, 515, dataNumber).setName(checkOrder)
-                break
-            case 6:
-                this.data = this.add.image(1055, 515, dataNumber).setName(checkOrder)
-                break
-            case 7:
-                this.data = this.add.image(355, 515, dataNumber).setName(checkOrder)
-                break
-            case 8:
-                this.data = this.add.image(1155, 515, dataNumber).setName(checkOrder)
-                break
+        if(local%2 === 0){
+            this.data = this.add.image(x + (local/2)*100, y, dataNumber).setName(checkOrder)
         }
+        else{
+            this.data = this.add.image(x - ((local/2) + 0.5)*100, y, dataNumber).setName(checkOrder)
+        }
+
 
         this.data.setOrigin(0, 0).setInteractive()
         this.input.setDraggable(this.data);
@@ -442,8 +376,8 @@ class Scene1 extends Phaser.Scene{
 
         this.moveOnCloud()
 
-        if(numberPlay === 0) {
-            numberPlay = -1
+        if(dataDynamicNumber === 0) {
+            dataDynamicNumber = -1
             this.time.delayedCall(2000, function Correct() {
 
                 this.destroyObject()
@@ -451,8 +385,8 @@ class Scene1 extends Phaser.Scene{
             }, [], this);
         }
 
-        if(numberPlay === - 1){
-            numberPlay = -2
+        if(dataDynamicNumber === - 1){
+            dataDynamicNumber = -2
             this.time.delayedCall(4000, function Correct() {
 
                 this.createBridge()
@@ -461,7 +395,7 @@ class Scene1 extends Phaser.Scene{
             }, [], this);
         }
 
-        if(numberPlay === -2){
+        if(dataDynamicNumber === -2){
             this.time.delayedCall(6000, function Correct() {
 
                 this.animationCar()
@@ -469,7 +403,7 @@ class Scene1 extends Phaser.Scene{
             }, [], this);
         }
 
-        if(numberPlay === -3 && onlyOneObject === 0){
+        if(dataDynamicNumber === -3 && onlyOneObject === 0){
             this.scene3()
         }
 
@@ -492,7 +426,7 @@ class Scene1 extends Phaser.Scene{
             this.carChild.x += 1.5
         }
         else{
-            numberPlay = -3
+            dataDynamicNumber = -3
         }
     }
 
@@ -505,7 +439,7 @@ class Scene1 extends Phaser.Scene{
     createBridge(){
         for(let i = 0; i < 9; i++){
             if(zone[i] !== null){
-                zone[i] = this.setLocalZones(i, "bridge").setInteractive()
+                zone[i] = this.setLocalZones(localStartOfDataX, localStartOfDataY, i, "bridge").setInteractive()
             }
         }
     }
@@ -517,9 +451,6 @@ class Scene1 extends Phaser.Scene{
                 this.noMuteSound.destroy()
                 question.mute = true
                 backGroundSound.mute = true
-                // correctSound.mute = true
-                // incorrectSound = true
-                // clappingSound = true
                 muteCheck = true
                 this.muteSoundController()
             })
@@ -530,9 +461,6 @@ class Scene1 extends Phaser.Scene{
                 this.muteSound.destroy()
                 question.mute = false
                 backGroundSound.mute = false
-                // correctSound.mute = false
-                // incorrectSound = false
-                // clappingSound = false
                 muteCheck = false
                 this.muteSoundController()
             })
@@ -547,7 +475,7 @@ class Scene1 extends Phaser.Scene{
         backGroundSound.stop()
         clappingSound.stop()
         this.restartButotn.setInteractive().on('pointerdown', () => {
-            numberPlay = 9 - dataConstNumber
+            dataDynamicNumber = 9 - dataConstNumber
             onlyOneObject = 0
             this.scene.start('Scene1');
         })
