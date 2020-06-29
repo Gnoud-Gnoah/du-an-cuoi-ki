@@ -7,6 +7,7 @@ let correctSound, incorrectSound, clappingSound, backGroundSound, question
 let sound = []
 let onlyOneObject = 0, restart = 0
 let direct = 1
+let muteCheck = false
 
 class Scene1 extends Phaser.Scene{
 
@@ -17,14 +18,14 @@ class Scene1 extends Phaser.Scene{
     //load image and audio;
     preload() {
         let progress = this.add.graphics();
-        this.add.text(560, 380, "LOADING GAME!",  {font: '50px Arial', fill: 'white'})
+        let text1 = this.add.text(520, 380, "LOADING GAME!",  {font: '50px Arial', fill: 'white'})
 
         this.load.on('progress', function (value) {
 
             progress.clear();
             progress.fillStyle(0xffffff, 1);
             progress.fillRect(0, 270, 1525 * value, 100);
-
+            text1.setText("LOADING GAME " + Math.floor(100*value) + "%" )
         })
 
         this.load.on('complete', function () {
@@ -54,8 +55,12 @@ class Scene1 extends Phaser.Scene{
             sound[i] = this.sound.add(i)
         }
 
+        this.muteSoundController()
+
         this.scene1()
     }
+
+
 
     scene1(){
         this.carChild = this.add.image(370, 420, 'carChild').setOrigin(0, 0)
@@ -502,6 +507,39 @@ class Scene1 extends Phaser.Scene{
             if(zone[i] !== null){
                 zone[i] = this.setLocalZones(i, "bridge").setInteractive()
             }
+        }
+    }
+
+    muteSoundController(){
+        if(muteCheck == false){
+            this.noMuteSound = this.add.image(1150, 550, 'noMuteSound').setOrigin(0, 0)
+            this.noMuteSound.setInteractive().on('pointerdown', () =>{
+                this.noMuteSound.destroy()
+                question.stop()
+                backGroundSound.stop()
+
+                muteCheck = true
+                this.muteSoundController()
+            })
+        }
+        else{
+            this.muteSound = this.add.image(1150, 550, 'muteSound').setOrigin(0, 0)
+            this.muteSound.setInteractive().on('pointerdown', () =>{
+                this.muteSound.destroy()
+
+                let musicConfig = {
+                    mute: false,
+                    volume: 1,
+                    rate: 1,
+                    detune: 0,
+                    seek: 0,
+                    loop: true,
+                    delay: 0
+                }
+                backGroundSound.play(musicConfig)
+                muteCheck = false
+                this.muteSoundController()
+            })
         }
     }
 

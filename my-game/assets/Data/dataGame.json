@@ -218,6 +218,16 @@
         "key": "cloudMove",
         "url": "assets/Images/cloudMove.png"
       },
+      {
+        "type": "image",
+        "key": "noMuteSound",
+        "url": "assets/Images/noMuteSound.png"
+      },
+      {
+        "type": "image",
+        "key": "muteSound",
+        "url": "assets/Images/muteSound.png"
+      },
 
       {
         "type": "audio",
