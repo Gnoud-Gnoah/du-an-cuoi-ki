@@ -515,9 +515,11 @@ class Scene1 extends Phaser.Scene{
             this.noMuteSound = this.add.image(1150, 550, 'noMuteSound').setOrigin(0, 0)
             this.noMuteSound.setInteractive().on('pointerdown', () =>{
                 this.noMuteSound.destroy()
-                question.stop()
-                backGroundSound.stop()
-
+                question.mute = true
+                backGroundSound.mute = true
+                // correctSound.mute = true
+                // incorrectSound = true
+                // clappingSound = true
                 muteCheck = true
                 this.muteSoundController()
             })
@@ -526,17 +528,11 @@ class Scene1 extends Phaser.Scene{
             this.muteSound = this.add.image(1150, 550, 'muteSound').setOrigin(0, 0)
             this.muteSound.setInteractive().on('pointerdown', () =>{
                 this.muteSound.destroy()
-
-                let musicConfig = {
-                    mute: false,
-                    volume: 1,
-                    rate: 1,
-                    detune: 0,
-                    seek: 0,
-                    loop: true,
-                    delay: 0
-                }
-                backGroundSound.play(musicConfig)
+                question.mute = false
+                backGroundSound.mute = false
+                // correctSound.mute = false
+                // incorrectSound = false
+                // clappingSound = false
                 muteCheck = false
                 this.muteSoundController()
             })
