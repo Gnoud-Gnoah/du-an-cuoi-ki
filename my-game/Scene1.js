@@ -16,6 +16,23 @@ class Scene1 extends Phaser.Scene{
 
     //load image and audio;
     preload() {
+        let progress = this.add.graphics();
+        this.add.text(560, 380, "LOADING GAME!",  {font: '50px Arial', fill: 'white'})
+
+        this.load.on('progress', function (value) {
+
+            progress.clear();
+            progress.fillStyle(0xffffff, 1);
+            progress.fillRect(0, 270, 1525 * value, 100);
+
+        })
+
+        this.load.on('complete', function () {
+
+            progress.destroy();
+
+        })
+
         this.load.pack('dataGame', 'assets/Data/dataGame.json');
         this.load.animation('animCorrect', 'assets/Data/animFireWork.json');
         //this.load.atlas('correct', 'assets/Animations/correct.png', 'assets/Data/fireWork.json');

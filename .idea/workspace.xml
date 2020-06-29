@@ -2,50 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="885b0844-2c5b-466f-8dc1-3e58a7e898c1" name="Default Changelist" comment="Sửa lỗi tải ảnh #6">
-      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/0.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/1.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/10.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/11.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/12.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/13.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/14.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/15.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/16.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/17.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/18.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/19.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/2.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/20.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/21.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/22.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/23.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/24.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/25.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/26.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/27.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/28.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/29.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/3.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/30.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/4.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/5.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/6.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/7.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/8.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/Audio/9.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/Data/animFireWork.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-game/assets/Data/fireWork.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-game/Scene1.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-game/Scene1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-game/assets/Data/dataGame.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-game/assets/Data/dataGame.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1ct8NNwRZyKYSmnaBoxHMXtrvOP" />
   <component name="ProjectLevelVcsManager">
@@ -109,7 +89,8 @@
       <workItem from="1593093322173" duration="3760000" />
       <workItem from="1593136688497" duration="2470000" />
       <workItem from="1593160044387" duration="1014000" />
-      <workItem from="1593353651951" duration="3812000" />
+      <workItem from="1593353651951" duration="4684000" />
+      <workItem from="1593394119997" duration="2686000" />
     </task>
     <task id="LOCAL-00001" summary="Khởi tạo cơ bản code và hình ảnh cho khởi đầu game.">
       <created>1591338442136</created>
