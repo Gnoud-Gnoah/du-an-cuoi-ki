@@ -1,6 +1,7 @@
 let dataChooseNumber = 9
 let dataDynamicNumber = 5
 let dataConstNumber = dataChooseNumber - dataDynamicNumber
+let smallToBig = 1
 
 let arrNumber = []
 let zone = []
@@ -153,7 +154,7 @@ class Scene1 extends Phaser.Scene{
         // sap xep mang arrNumber tu be den lon
         for(let i = 0; i < 8; i++){
             for(let j = i + 1; j < 9; j++){
-                if(arrNumber[j] < arrNumber [i]){
+                if(smallToBig*arrNumber[j] < smallToBig*arrNumber [i]){
                     let temp = arrNumber[i]
                     arrNumber[i] = arrNumber[j]
                     arrNumber[j] = temp
