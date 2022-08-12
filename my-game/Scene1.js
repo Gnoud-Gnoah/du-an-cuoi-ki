@@ -148,7 +148,7 @@ this.name2.y = this.cameras.main.height - this.name2.height
         // random lay dataChooseNumber (== 9) so khac nhau tu 0-30
         // dua het vao 1 mang arrNumber
         while(arrNumber.length != dataChooseNumber){
-            let temp = Phaser.Math.Between(0, 30);
+            let temp = Phaser.Math.Between(30, 40);
             if(arrNumber.length == 0){
                 arrNumber.push(temp)
             }
@@ -324,7 +324,7 @@ this.name2.y = this.cameras.main.height - this.name2.height
                 delay: 1
             }
 
-            sound[arrNumber[gameObject.name]].play(musicConfig)
+//            sound[arrNumber[gameObject.name]].play(musicConfig)
 
         });
 

@@ -167,6 +167,56 @@
         "key": "30",
         "url": "assets/DataNumber/30.png"
       },
+      {
+        "type": "image",
+        "key": "31",
+        "url": "assets/DataNumber/31.png"
+      },
+      {
+        "type": "image",
+        "key": "32",
+        "url": "assets/DataNumber/32.png"
+      },
+      {
+        "type": "image",
+        "key": "33",
+        "url": "assets/DataNumber/33.png"
+      },
+      {
+        "type": "image",
+        "key": "34",
+        "url": "assets/DataNumber/34.png"
+      },
+      {
+        "type": "image",
+        "key": "35",
+        "url": "assets/DataNumber/35.png"
+      },
+      {
+        "type": "image",
+        "key": "36",
+        "url": "assets/DataNumber/36.png"
+      },
+      {
+        "type": "image",
+        "key": "37",
+        "url": "assets/DataNumber/37.png"
+      },
+      {
+        "type": "image",
+        "key": "38",
+        "url": "assets/DataNumber/38.png"
+      },
+      {
+        "type": "image",
+        "key": "39",
+        "url": "assets/DataNumber/39.png"
+      },
+      {
+        "type": "image",
+        "key": "40",
+        "url": "assets/DataNumber/40.png"
+      },
 
       {
         "type": "image",
@@ -417,8 +467,57 @@
         "type": "audio",
         "key": "30",
         "url": "assets/Audio/30.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "31",
+        "url": "assets/Audio/31.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "32",
+        "url": "assets/Audio/32.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "33",
+        "url": "assets/Audio/33.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "34",
+        "url": "assets/Audio/34.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "35",
+        "url": "assets/Audio/35.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "36",
+        "url": "assets/Audio/36.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "37",
+        "url": "assets/Audio/37.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "38",
+        "url": "assets/Audio/38.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "39",
+        "url": "assets/Audio/39.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "40",
+        "url": "assets/Audio/40.mp3"
       }
-
     ]
   },
 
