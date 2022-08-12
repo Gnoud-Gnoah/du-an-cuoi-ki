@@ -19,8 +19,13 @@ let localStartOfDataY = 400
 let midX = 755
 let midY = 515
 
-class Scene1 extends Phaser.Scene{
+const SCHOOL_NAME1 = "Sản phẩm dự thi Thiết bị dạy học số lần thứ I, năm 2022";
+const SCHOOL_NAME2 = "Ứng dụng dạy bài 23: BẢNG CÁC SỐ TỪ 1 ĐẾn 100.";
+const SCHOOL_NAME3 = "Nhóm tác giả trường Tiểu học Canh Nậu- Yên Thế-Bắc Giang";
 
+class Scene1 extends Phaser.Scene{
+    name1;
+    name2;
     constructor() {
         super('Scene1');
     }
@@ -59,7 +64,10 @@ class Scene1 extends Phaser.Scene{
         this.backGround = this.add.image(0, 0, 'backGround').setOrigin(0, 0)
         this.frameWork = this.add.image(325, 20, 'frameWork').setOrigin(0, 0)
         this.cloud = this.add.image(330, 20, 'cloudMove').setOrigin(0, 0)
-
+        this.name1 = this.add.image(0, 0, 'text1').setOrigin(0, 0).setScale(0.75)
+        this.name1.x = this.cameras.main.width / 2 - this.name1.width / 3
+        this.name2 = this.add.image(50, 50, 'text2').setOrigin(0, 0).setScale(0.75)
+this.name2.y = this.cameras.main.height - this.name2.height
         // add audio for game
         correctSound = this.sound.add('correct')
         incorrectSound = this.sound.add('incorrect')

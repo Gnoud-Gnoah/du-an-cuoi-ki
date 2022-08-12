@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="885b0844-2c5b-466f-8dc1-3e58a7e898c1" name="Default Changelist" comment="Sửa lỗi tải ảnh #6">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/my-game/Index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-game/Scene1.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-game/Scene1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/Data/dataGame.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-game/assets/Data/dataGame.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/assets/Images/backGround.png" beforeDir="false" afterPath="$PROJECT_DIR$/my-game/assets/Images/backGround.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-game/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-game/game.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +32,9 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="1ct8NNwRZyKYSmnaBoxHMXtrvOP" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -34,22 +43,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ThucHanhCNPM/Volume/Scene1.js" />
-    <property name="nodejs_package_manager_path" value="npm" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/Project Files/had/du-an-cuoi-ki"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\Desktop\DuAnCuoiKi\my-game\assets\Data" />
     </key>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -125,31 +131,5 @@
     <MESSAGE value="Hoàn thành hiển thị chúc mừng khi hoàn thành bài và nút quay lại nếu muốn chơi lại." />
     <MESSAGE value="Sửa lỗi tải ảnh #6" />
     <option name="LAST_COMMIT_MESSAGE" value="Sửa lỗi tải ảnh #6" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="524" y="234" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593354376729">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="524" y="234" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1593354376729" />
-    <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591499568343">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1591499568343" />
-    <state x="393" y="19" key="CommitChangelistDialog2" timestamp="1592667484684">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="393" y="19" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1592667484684" />
-    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1592137850667">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1592137850667" />
-    <state x="93" y="93" width="1350" height="678" key="dock-window-1" timestamp="1593355231262">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="93" y="93" width="1350" height="678" key="dock-window-1/0.0.1536.864@0.0.1536.864" timestamp="1593355231262" />
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1593354490333">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1593354490333" />
   </component>
 </project>

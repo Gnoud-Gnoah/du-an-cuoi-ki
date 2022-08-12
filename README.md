@@ -1,11 +1,3 @@
-# DuAnCuoiKi
-
-Làm Game Sắp Xếp dãy số với framework Phaser.
-
-Họ và tên: Hoàng Anh Dương.
-
-Mã SV: 18020396.
-
 <h1>Trò chơi sắp xếp dãy số</h1>
 Trò chơi này yêu cầu người chơi kéo các con số bên dưới lên đúng vị trí của chúng. Trò chơi này dành cho các học sinh cấp 1 đã có đủ khả năng đọc các số từ 0 đến 30. Trò chơi này giúp các bạn nhỏ học được cách so sánh các con số với nhau và thành thạo chúng.
 

@@ -1,12 +1,22 @@
 {
   "test1": {
     "files": [
-
+      {
+        "type": "image",
+        "key": "text1",
+        "url": "assets/Images/text1.png"
+      },
+      {
+        "type": "image",
+        "key": "text2",
+        "url": "assets/Images/text2.png"
+      },
       {
         "type": "image",
         "key": "0",
         "url": "assets/DataNumber/0.png"
       },
+
       {
         "type": "image",
         "key": "1",
