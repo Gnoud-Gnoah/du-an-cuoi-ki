@@ -158,6 +158,9 @@ class Scene1 extends Phaser.Scene{
         }
         question.play(musicConfigQuestion)
         backGroundSound.play(musicConfig)
+        this.name1.setAlpha(0);
+        this.name2.setAlpha(0);
+        this.name3.setAlpha(0);
         this.randomDataNumber()
     }
 
@@ -166,7 +169,7 @@ class Scene1 extends Phaser.Scene{
         // random lay dataChooseNumber (== 9) so khac nhau tu 0-30
         // dua het vao 1 mang arrNumber
         while(arrNumber.length != dataChooseNumber){
-            let temp = Phaser.Math.Between(30, 40);
+            let temp = Phaser.Math.Between(31, 39);
             if(arrNumber.length == 0){
                 arrNumber.push(temp)
             }
@@ -501,10 +504,14 @@ class Scene1 extends Phaser.Scene{
         this.restartButotn = this.add.image(704, 340, 'restartButton').setOrigin(0, 0)
         backGroundSound.stop()
         clappingSound.stop()
+        this.name1.setAlpha(1);
+                            this.name2.setAlpha(1);
+                            this.name3.setAlpha(1);
         this.restartButotn.setInteractive().on('pointerdown', () => {
             dataDynamicNumber = 9 - dataConstNumber
             onlyOneObject = 0
             this.scene.start('Scene1');
+
         })
     }
 
